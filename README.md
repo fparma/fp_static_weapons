@@ -1,0 +1,1 @@
+# fp-static-weapons

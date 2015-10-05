@@ -1,0 +1,7 @@
+##
+# Project Ignores
+build
+
+##
+# NodeJS Ignores
+node_modules

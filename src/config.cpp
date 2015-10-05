@@ -13,10 +13,10 @@ class CfgPatches {
 };
 
 class CfgMovesBasic {
-	class DefaultDie;
-	class ManActions {
+  class DefaultDie;
+  class ManActions {
 
-		{% if weapons.m2 %}
+    {% if weapons.m2 %}
       M2_Gunner = "M2_Gunner";
       M2_Tripod_Gunner = "M2_Tripod_Gunner";
     {% endif %}
@@ -25,8 +25,8 @@ class CfgMovesBasic {
 };
 
 class CfgMovesMaleSdr : CfgMovesBasic {
-	class States {
-		class Crew;
+  class States {
+    class Crew;
     class MG_Gunner_Base : Crew {
       connectTo[] = {"Static_Dead", 1};
       leftHandIKBeg = true;
@@ -43,10 +43,10 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 
 class CfgVehicles {
   class LandVehicle;
-	class StaticWeapon: LandVehicle {
-		class Turrets;
-		class MainTurret;
-	};
+  class StaticWeapon: LandVehicle {
+    class Turrets;
+    class MainTurret;
+  };
   class StaticMGWeapon: StaticWeapon{};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}

@@ -1,21 +1,23 @@
 {
-  "author" : "FP Mod Team",
-  "version" : "0.0.1",
+  "author"    : "FP Mod Team",
+  "version"   : "0.0.1",
+  "rhs_compat": true,
+  "ace_compat": true,
   
-  "weapons" : {
-    "ags30" : true,
-    "d30" : true,
-    "dshkm" : true,
-    "igla" : true,
-    "kord" : true,
-    "m2" : true,
-    "m119" : true,
-    "m252" : true,
-    "metis" : true,
-    "mk19" : true,
-    "podnos" : true,
-    "spg9" : true,
-    "tow" : true,
-    "zu23" : true
+  "weapons"   : {
+    "ags30"   : true,
+    "d30"     : true,
+    "dshkm"   : true,
+    "igla"    : true,
+    "kord"    : true,
+    "m2"      : true,
+    "m119"    : true,
+    "m252"    : true,
+    "metis"   : true,
+    "mk19"    : true,
+    "podnos"  : true,
+    "spg9"    : true,
+    "tow"     : true,
+    "zu23"    : true
   }
 }

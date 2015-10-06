@@ -24,15 +24,15 @@
 
 class CfgPatches {
   class FP_Static_Weapons {
-    units[]= {
+    units[] = {
       {% if weapons.m2 %}
         "fp_static_m2_b",
         "fp_static_m2_minitripod_b"
       {% endif %}
     };
-    weapons[]={};
-    requiredVersion=0.1;
-    requiredAddons[]= {"A3_Static_F_Gamma","A3_CargoPoses_F","A3_Armor_F_Slammer","A3_Weapons_F"};
+    weapons[] = {};
+    requiredVersion = 0.1;
+    requiredAddons[] = {"A3_Static_F_Gamma","A3_CargoPoses_F","A3_Armor_F_Slammer","A3_Weapons_F"};
   };
 };
 

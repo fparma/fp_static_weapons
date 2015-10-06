@@ -1,15 +1,11 @@
 class fp_static_m2_base: StaticMGWeapon {
   armor = 30;
   armorStructural = 1;
-  
+
   model="\FP_Static_Weapons\m2\m2_mg";
   picture="\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";
   icon= "\FP_Static_Weapons\m2\icon\icomap_m2_CA.paa";
   mapSize = 3;
-  begin1[]={"FP_Static_Weapons\m2\data\m2_single_1", db5, 1, 1400};
-  begin2[]={"FP_Static_Weapons\m2\data\m2_single_2", db5, 1, 1400};
-  soundBegin[]={begin1,0.5, begin2, 0.5};
-  reloadMagazineSound[]={"\FP_Static_Weapons\m2\data\reload-belt-1",db-25,1,40};
   displayName="M2 Browning";
   class Turrets: Turrets {
     class MainTurret: MainTurret {

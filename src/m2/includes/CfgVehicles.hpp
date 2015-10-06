@@ -57,18 +57,18 @@ class fp_static_m2_minitripod_base: fp_static_m2_base {
 };
 
 class fp_static_m2_b : fp_static_m2_base {
-  scope = {{ SCOPE_PUBLIC }};
-  side = {{ SIDE_WEST }};
+  scope = {{ SCOPE.PUBLIC }};
+  side = {{ SIDE.WEST }};
   author = "{{ author }}";
-  faction = "BLU_F";
-  crew = "B_Soldier_F";
-  typicalCargo[] = {"B_Soldier_F"};
+  faction = "{{ FACTION.NATO }}";
+  crew = "{{ UNIT.NATO }}";
+  typicalCargo[] = {"{{ UNIT.NATO }}"};
 };
 class fp_static_m2_minitripod_b : fp_static_m2_minitripod_base {
-  scope = {{ SCOPE_PUBLIC }};
-  side = {{ SIDE_WEST }};
+  scope = {{ SCOPE.PUBLIC }};
+  side = {{ SIDE.WEST }};
   author = "{{ author }}";
-  faction = "BLU_F";
-  crew = "B_Soldier_F";
-  typicalCargo[] = {"B_Soldier_F"};
+  faction = "{{ FACTION.NATO }}";
+  crew = "{{ UNIT.NATO }}";
+  typicalCargo[] = {"{{ UNIT.NATO }}"};
 };

@@ -1,3 +1,15 @@
+
+{#/* Constant Declaration*/#}
+{% set SIDE_NONE = "-1" %}
+{% set SIDE_EAST = "0" %}
+{% set SIDE_WEST = "1" %}
+{% set SIDE_RESISTANCE = "2" %}
+{% set SIDE_CIVILIAN = "3" %}
+
+{% set SCOPE_PRIVATE = "0" %}
+{% set SCOPE_PROTECTED = "1" %}
+{% set SCOPE_PUBLIC = "2" %}
+
 class CfgPatches {
   class FP_Static_Weapons {
     units[]= {

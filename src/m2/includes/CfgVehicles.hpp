@@ -56,19 +56,19 @@ class fp_static_m2_minitripod_base: fp_static_m2_base {
   };
 };
 
-class fp_static_m2_aaf : fp_static_m2_base {
-  scope = 2;
-  side = 2;
+class fp_static_m2_b : fp_static_m2_base {
+  scope = {{ SCOPE_PUBLIC }};
+  side = {{ SIDE_WEST }};
   author = "{{ author }}";
-  faction = "IND_F";
-  crew = "I_Soldier_F";
-  typicalCargo[] = {"I_Soldier_F"};
+  faction = "BLU_F";
+  crew = "B_Soldier_F";
+  typicalCargo[] = {"B_Soldier_F"};
 };
-class fp_static_m2_minitripod_aaf : fp_static_m2_minitripod_base {
-  scope = 2;
-  side = 2;
+class fp_static_m2_minitripod_b : fp_static_m2_minitripod_base {
+  scope = {{ SCOPE_PUBLIC }};
+  side = {{ SIDE_WEST }};
   author = "{{ author }}";
-  faction = "IND_F";
-  crew = "I_Soldier_F";
-  typicalCargo[] = {"I_Soldier_F"};
+  faction = "BLU_F";
+  crew = "B_Soldier_F";
+  typicalCargo[] = {"B_Soldier_F"};
 };

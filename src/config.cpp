@@ -1,27 +1,26 @@
-
 {#/* Constant Declaration*/#}
-{% set SIDE = {
+{%- set SIDE = {
   "NONE" : -1,
   "EAST" : 0,
   "WEST" : 1,
   "IND"  : 2,
   "CIV"  : 3
-} %}
+} -%}
 {% set SCOPE = {
   "PRIVATE"   : 0,
   "PROTECTED" : 1,
   "PUBLIC"    : 2
-} %}
+} -%}
 {% set FACTION = {
   "NATO" : "BLU_F",
   "CSAT" : "OPF_F",
   "AAF"  : "IND_F"
-} %}
+} -%}
 {% set UNIT = {
   "NATO" : "B_Soldier_F",
   "CSAT" : "O_Soldier_F",
   "AAF"  : "I_Soldier_F"
-} %}
+} -%}
 
 class CfgPatches {
   class FP_Static_Weapons {

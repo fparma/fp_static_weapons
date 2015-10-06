@@ -14,8 +14,8 @@ class CfgPatches {
   class FP_Static_Weapons {
     units[]= {
       {% if weapons.m2 %}
-        "fp_static_m2_aaf",
-        "fp_static_m2_minitripod_aaf"
+        "fp_static_m2_b",
+        "fp_static_m2_minitripod_b"
       {% endif %}
     };
     weapons[]={};

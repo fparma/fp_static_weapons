@@ -1,4 +1,7 @@
 class fp_static_m2_base: StaticMGWeapon {
+  armor = 30;
+  armorStructural = 1;
+  
   model="\FP_Static_Weapons\m2\m2_mg";
   picture="\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";
   icon= "\FP_Static_Weapons\m2\icon\icomap_m2_CA.paa";
@@ -37,7 +40,6 @@ class fp_static_m2_base: StaticMGWeapon {
     class ReloadMagazine{source="reloadmagazine";weapon="HMG_m2";};
     class Revolving{source="revolving";weapon="HMG_m2";};
   };
-  armorStructural=10.0;
   class Library {libTextDesc = "asd";};
 };
 

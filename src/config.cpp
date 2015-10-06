@@ -27,7 +27,11 @@ class CfgPatches {
     units[] = {
       {% if weapons.m2 %}
         "fp_static_m2_b",
-        "fp_static_m2_minitripod_b"
+        "fp_static_m2_minitripod_b",
+      {% endif %}
+
+      {% if weapons.dshkm %}
+        "fp_static_dshkm_b"
       {% endif %}
     };
     weapons[] = {};
@@ -43,6 +47,11 @@ class CfgMovesBasic {
     {% if weapons.m2 %}
       M2_Gunner = "M2_Gunner";
       M2_Tripod_Gunner = "M2_Tripod_Gunner";
+    {% endif %}
+
+    {% if weapons.dshkm %}
+      DShKM_Gunner = "DShKM_Gunner";
+      DShKM_Tripod_Gunner = "DShKM_Tripod_Gunner";
     {% endif %}
 
 	};
@@ -62,6 +71,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     };
 
     {% if weapons.m2 %}{% include "src/m2/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -74,4 +84,5 @@ class CfgVehicles {
   class StaticMGWeapon: StaticWeapon{};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
 };

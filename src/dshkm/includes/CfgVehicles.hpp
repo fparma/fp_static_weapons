@@ -21,18 +21,20 @@ class fp_static_dshkm_base : StaticMGWeapon {
       maxElev = 35;
       minTurn = -180;
       maxTurn = 180;
-      weapons[] = {"HMG_M2"};
+      weapons[] = {"fp_static_weap_dshkm"};
       magazines[] = {
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow"
+        "fp_static_mag_50rnd_dshkm",
+        "fp_static_mag_50rnd_dshkm",
+        "fp_static_mag_50rnd_dshkm",
+        "fp_static_mag_50rnd_dshkm",
+        "fp_static_mag_50rnd_dshkm",
+        "fp_static_mag_50rnd_dshkm"
       };
       gunnerAction = "DShKM_Gunner";
     };
   };
   class AnimationSources {
-    class muzzle_source {source = "reload";weapon = "HMG_M2";};
+    class muzzle_source {source = "reload";weapon = "fp_static_weap_dshkm";};
     class ReloadAnim : muzzle_source {source = "reload";};
     class ReloadMagazine : muzzle_source {source = "reloadmagazine";};
     class Revolving : muzzle_source {source = "revolving";};

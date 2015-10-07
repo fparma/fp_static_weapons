@@ -87,3 +87,18 @@ class CfgVehicles {
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
 };
+
+class CfgWeapons {
+  class MGunCore;
+	class MGun: MGunCore {};
+
+  {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgWeapons.hpp" %}{% endif %}
+};
+
+class CfgMagazines {
+  class Default;
+  class CA_Magazine: Default{};
+  class VehicleMagazine: CA_Magazine{};
+
+  {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMagazines.hpp" %}{% endif %}
+}

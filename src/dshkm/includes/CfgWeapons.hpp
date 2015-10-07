@@ -29,7 +29,7 @@ class fp_static_weap_dshkm: MGun {
     sounds[] = {"StandardSound"};
     class StandardSound {
       weaponSoundEffect = "DefaultRifle";
-      begin1[] = {"\FP_Static_Weapons\dshkm\sounds\dshk_fire_3p",db15,1,1600};
+      begin1[] = {"\FP_Static_Weapons\dshkm\sounds\dshk_fire1",db15,1,1600};
       soundBegin[] = {"begin1",1};
     };
     reloadTime = 0.1;

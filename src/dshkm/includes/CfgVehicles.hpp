@@ -6,7 +6,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\dshkm\icon\dshkm_mg_ca.paa";
   icon = "\FP_Static_Weapons\dshkm\icon\icomap_DShKM_CA.paa";
   mapSize = 3;
-  displayName = "DShKM (Test)";
+  displayName = "DShKM";
   class Turrets : Turrets {
     class MainTurret: MainTurret {
       optics = 1;
@@ -28,7 +28,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
         "100Rnd_127x99_mag_Tracer_Yellow",
         "100Rnd_127x99_mag_Tracer_Yellow"
       };
-      gunnerAction = "M2_Gunner";
+      gunnerAction = "DShKM_Gunner";
     };
   };
   class AnimationSources {
@@ -41,7 +41,30 @@ class fp_static_dshkm_base : StaticMGWeapon {
   class Library {libTextDesc = "asd";};
 };
 
+class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {
+  displayName = "DShKM (SAG-30 Tripod)";
+  model = "\FP_Static_Weapons\dshkm\DShKM_mg2";
+  class Turrets: Turrets {
+    class MainTurret: MainTurret {
+      gunnerLeftHandAnimName = "otochlaven_shake";
+      gunnerRightHandAnimName = "otochlaven_shake";
+      gunneraction = "DShKM_Tripod_Gunner";
+      initturn = 0;
+      maxturn = 90;
+      minturn = -90;
+    };
+  };
+};
+
 class fp_static_dshkm_b : fp_static_dshkm_base {
+  scope = {{ SCOPE.PUBLIC }};
+  side = {{ SIDE.WEST }};
+  author = "{{ author }}";
+  faction = "{{ FACTION.NATO }}";
+  crew = "{{ UNIT.NATO }}";
+  typicalCargo[] = {"{{ UNIT.NATO }}"};
+};
+class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
   scope = {{ SCOPE.PUBLIC }};
   side = {{ SIDE.WEST }};
   author = "{{ author }}";

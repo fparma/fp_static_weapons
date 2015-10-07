@@ -31,7 +31,8 @@ class CfgPatches {
       {% endif %}
 
       {% if weapons.dshkm %}
-        "fp_static_dshkm_b"
+        "fp_static_dshkm_b",
+        "fp_static_dshkm_minitripod_b"
       {% endif %}
     };
     weapons[] = {};

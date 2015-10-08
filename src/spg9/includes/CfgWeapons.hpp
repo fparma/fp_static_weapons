@@ -1,15 +1,18 @@
 class fp_static_weap_spg9 : RocketPods {
   scope = 2;
-  displayName = "SPG 9";
+  displayName = "SPG-9";
   type = 65536;
   reloadTime = 6;
   magazineReloadTime = 10;
   modelOptics = "";
-  magazines[] = {"fp_static_mag_pg9v"};
+  magazines[] = {
+    "fp_static_mag_pg9v",
+    "fp_static_mag_og9v"
+  };
   sounds[] = {"StandardSound"};
   class StandardSound {
     weaponSoundEffect = "DefaultRifle";
-    begin1[] = {"\FP_Static_Weapons\spg9\sounds\spg9_fire1",db13,1,1100};
+    begin1[] = {"\FP_Static_Weapons\spg9\sounds\spg9_fire1",db12,1,1100};
     soundBegin[] = {"begin1",1};
   };
 

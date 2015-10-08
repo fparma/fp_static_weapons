@@ -17,7 +17,8 @@ class fp_static_spg9_base: StaticATWeapon {
     class MainTurret: MainTurret {
       weapons[]={"fp_static_weap_spg9"};
       magazines[] = {
-        "fp_static_mag_pg9v"
+        "fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v","fp_static_mag_pg9v",
+        "fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v"
       };
       gunnerAction = "SPG_Gunner";
       gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";

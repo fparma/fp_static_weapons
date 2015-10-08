@@ -32,7 +32,11 @@ class CfgPatches {
 
       {% if weapons.dshkm %}
         "fp_static_dshkm_b",
-        "fp_static_dshkm_minitripod_b"
+        "fp_static_dshkm_minitripod_b",
+      {% endif %}
+
+      {% if weapons.spg9 %}
+        "fp_static_spg9_b"
       {% endif %}
     };
     weapons[] = {};
@@ -55,6 +59,10 @@ class CfgMovesBasic {
       DShKM_Tripod_Gunner = "DShKM_Tripod_Gunner";
     {% endif %}
 
+    {% if weapons.spg9 %}
+      SPG_Gunner = "SPG_Gunner";
+    {% endif %}
+
 	};
 };
 
@@ -73,6 +81,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 
     {% if weapons.m2 %}{% include "src/m2/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -82,23 +91,40 @@ class CfgVehicles {
     class Turrets;
     class MainTurret;
   };
+  class StaticATWeapon: StaticWeapon{};
   class StaticMGWeapon: StaticWeapon{};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.spg9 %}{% include "src/spg9/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {
   class MGunCore;
+  class CannonCore;
+  class RocketPods;
 	class MGun: MGunCore {};
+    class cannon_120mm : CannonCore{};
 
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgWeapons.hpp" %}{% endif %}
+  {% if weapons.spg9 %}{% include "src/spg9/includes/CfgWeapons.hpp" %}{% endif %}
 };
 
 class CfgMagazines {
   class Default;
   class CA_Magazine: Default{};
+  class CA_LauncherMagazine: CA_Magazine{};
   class VehicleMagazine: CA_Magazine{};
 
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMagazines.hpp" %}{% endif %}
-}
+  {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMagazines.hpp" %}{% endif %}
+};
+
+class CfgAmmo {
+  class ShellCore;
+  class RocketCore;
+  class ShellBase : ShellCore{};
+  class RocketBase: RocketCore{};
+
+  {% if weapons.spg9 %}{% include "src/spg9/includes/CfgAmmo.hpp" %}{% endif %}
+};

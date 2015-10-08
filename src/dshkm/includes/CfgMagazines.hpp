@@ -9,3 +9,7 @@ class fp_static_mag_50rnd_dshkm: VehicleMagazine {
   lastRoundsTracer = 5;
   nameSound="mgun";
 };
+class fp_static_mag_150rnd_dshkm : fp_static_mag_50rnd_dshkm {
+  displayName = "150 Rnd DshKM Mag";
+  count=150;
+};

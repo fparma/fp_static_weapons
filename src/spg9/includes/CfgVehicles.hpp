@@ -21,7 +21,7 @@ class fp_static_spg9_base: StaticATWeapon {
         "fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v","fp_static_mag_og9v"
       };
       gunnerAction = "SPG_Gunner";
-      gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
+      gunnerOpticsModel = "\FP_Static_Weapons\spg9\2Dscope_SPG_4";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2","TankGunnerOptics1"};
       memoryPointsGetInGunner = "pos_gunner_dir";
       memoryPointsGetInGunnerDir = "pos_gunner";

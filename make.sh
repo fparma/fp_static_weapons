@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-rm -rf build/FP_Static_Weapons
-mkdir -p build/FP_Static_Weapons
-cp -r src/* build/FP_Static_Weapons/
-rm -rf build/FP_Static_Weapons/*/includes
-grunt
+rm -rf build/FP_Static_Weapons              # Delete Build Folder
+mkdir -p build/FP_Static_Weapons            # Create Empty Build Folder
+cp -r src/* build/FP_Static_Weapons/        # Copy over all source files
+rm -rf build/FP_Static_Weapons/*/includes   # Remove all include files
+grunt                                       # Generate the config.cpp file.

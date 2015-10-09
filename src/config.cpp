@@ -35,6 +35,10 @@ class CfgPatches {
         "fp_static_dshkm_minitripod_b",
       {% endif %}
 
+      {% if weapons.zu23 %}
+        "fp_static_zu23_b",
+      {% endif %}
+
       {% if weapons.spg9 %}
         "fp_static_spg9_b"
       {% endif %}
@@ -63,6 +67,10 @@ class CfgMovesBasic {
       SPG_Gunner = "SPG_Gunner";
     {% endif %}
 
+    {% if weapons.zu23 %}
+      ZU23_Gunner = "ZU23_Gunner";
+    {% endif %}
+
 	};
 };
 
@@ -82,6 +90,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     {% if weapons.m2 %}{% include "src/m2/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.zu23 %}{% include "src/zu23/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -91,12 +100,14 @@ class CfgVehicles {
     class Turrets;
     class MainTurret;
   };
+  class StaticCannon : StaticWeapon {class ViewOptics;};
   class StaticATWeapon : StaticWeapon{};
   class StaticMGWeapon : StaticWeapon{};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.zu23 %}{% include "src/zu23/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {
@@ -105,10 +116,11 @@ class CfgWeapons {
   class RocketPods;
   class MGun : MGunCore {};
   class cannon_120mm : CannonCore{};
-  
+
   {% if weapons.m2 %}{% include "src/m2/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgWeapons.hpp" %}{% endif %}
+  {% if weapons.zu23 %}{% include "src/zu23/includes/CfgWeapons.hpp" %}{% endif %}
 };
 
 class CfgMagazines {
@@ -116,10 +128,11 @@ class CfgMagazines {
   class CA_Magazine : Default{};
   class CA_LauncherMagazine : CA_Magazine{};
   class VehicleMagazine : CA_Magazine{};
-  
+
   {% if weapons.m2 %}{% include "src/m2/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMagazines.hpp" %}{% endif %}
+  {% if weapons.zu23 %}{% include "src/zu23/includes/CfgMagazines.hpp" %}{% endif %}
 };
 
 class CfgAmmo {
@@ -127,8 +140,9 @@ class CfgAmmo {
   class RocketCore;
   class ShellBase : ShellCore{};
   class RocketBase : RocketCore{};
-  
+
   {% if weapons.m2 %}{% include "src/m2/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgAmmo.hpp" %}{% endif %}
+  {% if weapons.zu23 %}{% include "src/zu23/includes/CfgAmmo.hpp" %}{% endif %}
 };

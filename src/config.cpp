@@ -105,6 +105,7 @@ class CfgWeapons {
   class RocketPods;
   class MGun: MGunCore {};
   class cannon_120mm : CannonCore{};
+  
   {% if weapons.m2 %}{% include "src/m2/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgWeapons.hpp" %}{% endif %}
@@ -115,6 +116,7 @@ class CfgMagazines {
   class CA_Magazine: Default{};
   class CA_LauncherMagazine: CA_Magazine{};
   class VehicleMagazine: CA_Magazine{};
+  
   {% if weapons.m2 %}{% include "src/m2/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMagazines.hpp" %}{% endif %}
@@ -125,6 +127,7 @@ class CfgAmmo {
   class RocketCore;
   class ShellBase : ShellCore{};
   class RocketBase: RocketCore{};
+  
   {% if weapons.m2 %}{% include "src/m2/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgAmmo.hpp" %}{% endif %}

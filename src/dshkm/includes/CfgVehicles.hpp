@@ -8,7 +8,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
   mapSize = 3;
   displayName = "DShKM";
   class Turrets : Turrets {
-    class MainTurret: MainTurret {
+    class MainTurret : MainTurret {
       optics = 1;
       turretInfoType = "RscWeaponZeroing";
       discreteDistance[] = {100,200,300,400,500,600,800,1000,1200,1500};
@@ -46,8 +46,8 @@ class fp_static_dshkm_base : StaticMGWeapon {
 class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {
   displayName = "DShKM (SAG-30 Tripod)";
   model = "\FP_Static_Weapons\dshkm\DShKM_mg2";
-  class Turrets: Turrets {
-    class MainTurret: MainTurret {
+  class Turrets : Turrets {
+    class MainTurret : MainTurret {
       gunnerLeftHandAnimName = "otochlaven_shake";
       gunnerRightHandAnimName = "otochlaven_shake";
       gunneraction = "DShKM_Tripod_Gunner";

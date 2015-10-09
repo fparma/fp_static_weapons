@@ -2,12 +2,12 @@ class fp_static_ammo_pg9v : RocketBase {
 	hit = 320;
 	indirectHit = 15;
 	indirectHitRange = 1.2;
-  maxSpeed=800;
-  typicalSpeed=700;
+  maxSpeed = 800;
+  typicalSpeed = 700;
   fuseDistance = 12;
   timeToLive = 5;
-  thrustTime=1;
-  thrust=500;
+  thrustTime = 1;
+  thrust = 500;
   explosive = 0.8;
 	cost = 500;
 	model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
@@ -17,5 +17,5 @@ class fp_static_ammo_pg9v : RocketBase {
 class fp_static_ammo_og9v : fp_static_ammo_pg9v {
 	hit = 140;
 	indirectHit = 35;
-	indirectHitRange=10;
+	indirectHitRange = 10;
 };

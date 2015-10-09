@@ -15,9 +15,7 @@ class fp_static_weap_spg9 : RocketPods {
     begin1[] = {"\FP_Static_Weapons\spg9\sounds\spg9_fire1",db12,1,1100};
     soundBegin[] = {"begin1",1};
   };
-
   drySound[] = {"",1,1};
-
   recoil = "launcherBase";
   aiRateOfFire = 10.0;
   aiRateOfFireDistance = 450;

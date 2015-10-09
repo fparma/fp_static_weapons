@@ -1,4 +1,4 @@
-class fp_static_m2_base: StaticMGWeapon {
+class fp_static_m2_base : StaticMGWeapon {
   armor = 30;
   armorStructural = 1;
 
@@ -7,8 +7,8 @@ class fp_static_m2_base: StaticMGWeapon {
   icon = "\FP_Static_Weapons\m2\icon\icomap_m2_CA.paa";
   mapSize = 3;
   displayName = "M2 Browning";
-  class Turrets: Turrets {
-    class MainTurret: MainTurret {
+  class Turrets : Turrets {
+    class MainTurret : MainTurret {
       optics = 1;
       turretInfoType = "RscWeaponZeroing";
       discreteDistance[] = {100,200,300,400,500,600,800,1000,1200,1500};
@@ -39,11 +39,11 @@ class fp_static_m2_base: StaticMGWeapon {
   class Library {libTextDesc = "asd";};
 };
 
-class fp_static_m2_minitripod_base: fp_static_m2_base {
+class fp_static_m2_minitripod_base : fp_static_m2_base {
   displayName = "M2 Browning (M3 Tripod)";
   model = "\FP_Static_Weapons\m2\m2_mg2";
-  class Turrets: Turrets {
-    class MainTurret: MainTurret {
+  class Turrets : Turrets {
+    class MainTurret : MainTurret {
       gunnerLeftHandAnimName = "otochlaven_shake";
       gunnerRightHandAnimName = "otochlaven_shake";
       gunneraction = "M2_Tripod_Gunner";

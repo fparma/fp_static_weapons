@@ -87,12 +87,12 @@ class CfgMovesMaleSdr : CfgMovesBasic {
 
 class CfgVehicles {
   class LandVehicle;
-  class StaticWeapon: LandVehicle {
+  class StaticWeapon : LandVehicle {
     class Turrets;
     class MainTurret;
   };
-  class StaticATWeapon: StaticWeapon{};
-  class StaticMGWeapon: StaticWeapon{};
+  class StaticATWeapon : StaticWeapon{};
+  class StaticMGWeapon : StaticWeapon{};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
@@ -103,7 +103,7 @@ class CfgWeapons {
   class MGunCore;
   class CannonCore;
   class RocketPods;
-  class MGun: MGunCore {};
+  class MGun : MGunCore {};
   class cannon_120mm : CannonCore{};
   
   {% if weapons.m2 %}{% include "src/m2/includes/CfgWeapons.hpp" %}{% endif %}
@@ -113,9 +113,9 @@ class CfgWeapons {
 
 class CfgMagazines {
   class Default;
-  class CA_Magazine: Default{};
-  class CA_LauncherMagazine: CA_Magazine{};
-  class VehicleMagazine: CA_Magazine{};
+  class CA_Magazine : Default{};
+  class CA_LauncherMagazine : CA_Magazine{};
+  class VehicleMagazine : CA_Magazine{};
   
   {% if weapons.m2 %}{% include "src/m2/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMagazines.hpp" %}{% endif %}
@@ -126,7 +126,7 @@ class CfgAmmo {
   class ShellCore;
   class RocketCore;
   class ShellBase : ShellCore{};
-  class RocketBase: RocketCore{};
+  class RocketBase : RocketCore{};
   
   {% if weapons.m2 %}{% include "src/m2/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgAmmo.hpp" %}{% endif %}

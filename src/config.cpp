@@ -140,6 +140,7 @@ class CfgAmmo {
   class RocketCore;
   class ShellBase : ShellCore{};
   class RocketBase : RocketCore{};
+  class B_35mm_AA;
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgAmmo.hpp" %}{% endif %}

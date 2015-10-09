@@ -20,10 +20,10 @@ class fp_static_zu23_base : StaticCannon {
       minElev = -10;
       maxElev = 85;
       initElev = 0;
-      weapons[] = {"HMG_M2"};
+      weapons[] = {"fp_static_weap_zu23"};
       magazines[] = {
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow"
+        "fp_static_mag_2000rnd_23mm_AZP85",
+        "fp_static_mag_2000rnd_23mm_AZP85"
       };
       gunnerAction = "ZU23_Gunner";
       selectionFireAnim = "zasleh";
@@ -62,11 +62,11 @@ class fp_static_zu23_base : StaticCannon {
   class AnimationSources {
     class muzzle_source {
       source="reload";
-      weapon="HMG_M2";
+      weapon="fp_static_weap_zu23";
     };
     class fire_anim {
       source="revolving";
-      weapon="HMG_M2";
+      weapon="fp_static_weap_zu23";
     };
   };
 };

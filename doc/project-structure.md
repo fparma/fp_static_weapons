@@ -5,6 +5,7 @@ This document details the structure of this project.
 
 ```
 doc                       | Documentations in Markdown formatting
+templates                 | Sample Models, Code and Textures
 src                       | Source Code and templates.
   |-> config.cpp          | Main Config file. Contains all includes and vars
   |-> data                | Global files like muzzleflashes

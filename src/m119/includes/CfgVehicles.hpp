@@ -18,7 +18,7 @@ class fp_static_m119_base : StaticMortar {
 
   class Turrets : Turrets {
     class MainTurret : MainTurret {
-      weapons[] = {"mortar_155mm_AMOS"};
+      weapons[] = {"fp_static_weap_m119"};
 
       magazines[] = {"32Rnd_155mm_Mo_shells","2Rnd_155mm_Mo_guided","2Rnd_155mm_Mo_guided","6Rnd_155mm_Mo_mine","2Rnd_155mm_Mo_Cluster","6Rnd_155mm_Mo_smoke","2Rnd_155mm_Mo_LG","6Rnd_155mm_Mo_AT_mine"};
 
@@ -40,7 +40,7 @@ class fp_static_m119_base : StaticMortar {
   class AnimationSources {
     class recoil_source {
       source = "reload";
-      weapon = "mortar_155mm_AMOS";
+      weapon = "fp_static_weap_m119";
     };
     class leftT_source {source="user";animPeriod = 1;initPhase=-2.3; };
     class rightT_source: leftT_source {initPhase=0; };

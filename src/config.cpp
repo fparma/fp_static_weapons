@@ -40,8 +40,13 @@ class CfgPatches {
       {% endif %}
 
       {% if weapons.spg9 %}
-        "fp_static_spg9_b"
+        "fp_static_spg9_b",
       {% endif %}
+
+      {% if weapons.m119 %}
+        "fp_static_m119_b"
+      {% endif %}
+
     };
     weapons[] = {};
     requiredVersion = 0.1;
@@ -71,6 +76,11 @@ class CfgMovesBasic {
       ZU23_Gunner = "ZU23_Gunner";
     {% endif %}
 
+    {% if wepaons.m119 %}
+      M119_Commander = "M119_Commander";
+      M119_Gunner = "M119_Gunner";
+      M119_Cargo = "M119_Cargo";
+    {% endif %}
 	};
 };
 
@@ -91,6 +101,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.zu23 %}{% include "src/zu23/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.m119 %}{% include "src/m119/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -108,6 +119,7 @@ class CfgVehicles {
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.zu23 %}{% include "src/zu23/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.m119 %}{% include "src/m119/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {

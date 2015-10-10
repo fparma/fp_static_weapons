@@ -1,5 +1,5 @@
-class fp_static_m119_base : StaticCannon {
-  accuracy = 0.12;
+class fp_static_m119_base : StaticMortar {
+  accuracy = 0.25;
   cost = 10000;
   availableForSupportTypes[] = {"Artillery"};
   artilleryScanner = 1;
@@ -23,7 +23,7 @@ class fp_static_m119_base : StaticCannon {
       magazines[] = {"32Rnd_155mm_Mo_shells","2Rnd_155mm_Mo_guided","2Rnd_155mm_Mo_guided","6Rnd_155mm_Mo_mine","2Rnd_155mm_Mo_Cluster","6Rnd_155mm_Mo_smoke","2Rnd_155mm_Mo_LG","6Rnd_155mm_Mo_AT_mine"};
 
       gunnerAction = "M119_Gunner";
-      gunnerOpticsModel = "\FP_Static_Weapons\m119\m119_optics";
+      gunnerOpticsModel = "\A3\Weapons_F\acc\reticle_Mortar_01_F.p3d";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
       memoryPointsGetInGunner = "pos_gunner_dir";
       memoryPointsGetInGunnerDir = "pos_gunner";

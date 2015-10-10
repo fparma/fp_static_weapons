@@ -76,7 +76,7 @@ class CfgMovesBasic {
       ZU23_Gunner = "ZU23_Gunner";
     {% endif %}
 
-    {% if wepaons.m119 %}
+    {% if weapons.m119 %}
       M119_Commander = "M119_Commander";
       M119_Gunner = "M119_Gunner";
       M119_Cargo = "M119_Cargo";
@@ -114,6 +114,7 @@ class CfgVehicles {
   class StaticCannon : StaticWeapon {class ViewOptics;};
   class StaticATWeapon : StaticWeapon{};
   class StaticMGWeapon : StaticWeapon{};
+  class StaticMortar : StaticWeapon{class ViewOptics;};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}

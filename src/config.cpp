@@ -139,10 +139,13 @@ class CfgVehicles {
 class CfgWeapons {
   class MGunCore;
   class CannonCore;
+  class LauncherCore;
   class RocketPods;
   class MGun : MGunCore {};
   class cannon_120mm : CannonCore{};
+  class MissileLauncher : LauncherCore{};
   class mortar_155mm_AMOS : CannonCore{};
+  class missiles_titan : MissileLauncher{};
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgWeapons.hpp" %}{% endif %}

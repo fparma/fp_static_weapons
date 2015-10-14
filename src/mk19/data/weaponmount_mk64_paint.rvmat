@@ -92,5 +92,5 @@ class Stage7
 };
 class StageTI
 {
-	texture="RDS_StaticW\Mk19_minitripod\data\weaponmount_mk64_ti_ca.paa";
+	texture="FP_Static_Weapons\mk19\data\weaponmount_mk64_ti_ca.paa";
 };

@@ -23,10 +23,10 @@ class fp_static_m2_base : StaticMGWeapon {
       maxTurn = 180;
       weapons[] = {"HMG_M2"};
       magazines[] = {
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow",
-        "100Rnd_127x99_mag_Tracer_Yellow"
+        "100Rnd_127x99_mag_Tracer_Red",
+        "100Rnd_127x99_mag_Tracer_Red",
+        "100Rnd_127x99_mag_Tracer_Green",
+        "100Rnd_127x99_mag_Tracer_Green"
       };
       gunnerAction = "M2_Gunner";
     };

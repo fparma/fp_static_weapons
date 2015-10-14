@@ -142,6 +142,11 @@ class CfgWeapons {
   class LauncherCore;
   class RocketPods;
   class MGun : MGunCore {};
+  class LMG_RCWS : MGun{};
+  class HMG_127 : LMG_RCWS{};
+  class HMG_01 : HMG_127{};
+  class HMG_M2 : HMG_01{class manual;};
+    
   class cannon_120mm : CannonCore{};
   class MissileLauncher : LauncherCore{};
   class mortar_155mm_AMOS : CannonCore{};

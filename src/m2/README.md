@@ -10,6 +10,7 @@ This is the M2 Browning which has been ported over from Arma 2.
 * ACE Cargo Config
 * ACE Logistics Config
 * Project Reality Sound Config
+* Optional RHS Damage System Compat
 
 ## Known Issues
 * Get In MemoryPoint issue

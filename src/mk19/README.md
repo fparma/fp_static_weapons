@@ -15,6 +15,7 @@ This Vehicle is still todo, and only the models and the Textures have been porte
 * Project Reality Sound Config
 * Weapon Config
 * Vehicle Config
+* Optional RHS Damage System Compat
 
 ## Known Issues
 * Get In MemoryPoint issue

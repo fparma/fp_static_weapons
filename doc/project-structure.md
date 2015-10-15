@@ -10,6 +10,7 @@ src                       | Source Code and templates.
   |-> config.cpp          | Main Config file. Contains all includes and vars
   |-> data                | Global files like muzzleflashes
   |-> m2                  | M2 Browning Folder
+      |-> README.md       | M2 Browning Markdown Documentations
       |-> *.p3d           | M2 Browning Model Files
       |-> model.cfg       | M2 Browning Model Config
       |-> anim            | M2 Browning Animations

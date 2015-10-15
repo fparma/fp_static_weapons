@@ -22,7 +22,7 @@ class fp_static_weap_dshkm : MGun {
   };
 
   magazineReloadTime = 6;
-  aiDispersionCoefY = 21; //7.0;
+  aiDispersionCoefY = 21;
   aiDispersionCoefX = 21;
   canLock = 0;
   modes[] = {"manual","close", "short", "medium", "far"};
@@ -49,7 +49,7 @@ class fp_static_weap_dshkm : MGun {
   class close : manual {
     showToPlayer = false;
     soundBurst = false;
-    burst = 10; //Rg 6;
+    burst = 10;
     aiRateOfFire = 0.5;
     aiRateOfFireDistance = 50;
     minRange = 0;minRangeProbab = 0.05;
@@ -57,27 +57,27 @@ class fp_static_weap_dshkm : MGun {
     maxRange = 100;maxRangeProbab = 0.04;
   };
   class short : close {
-    burst = 8; //Rg 6;
+    burst = 8;
     aiRateOfFire = 2;
-    aiRateOfFireDistance = 300; //Rg 200;
+    aiRateOfFireDistance = 300;
     minRange = 50;minRangeProbab = 0.05;
-    midRange = 150;midRangeProbab = 0.58; //Rg 100;
-    maxRange = 300;maxRangeProbab = 0.04; //Rg 200;
+    midRange = 150;midRangeProbab = 0.58;
+    maxRange = 300;maxRangeProbab = 0.04;
   };
   class medium : close {
-    burst = 4; //Rg 8;
-    aiRateOfFire = 3; //Rg 4;
-    aiRateOfFireDistance = 600; //Rg 400;
+    burst = 4;
+    aiRateOfFire = 3;
+    aiRateOfFireDistance = 600;
     minRange = 200;minRangeProbab = 0.05;
-    midRange = 500;midRangeProbab = 0.58; //Rg 300;
-    maxRange = 800;maxRangeProbab = 0.04; //Rg 400;
+    midRange = 500;midRangeProbab = 0.58;
+    maxRange = 800;maxRangeProbab = 0.04;
   };
   class far : close {
-    burst = 5; //Rg 7;
-    aiRateOfFire = 5; //Rg 7;
-    aiRateOfFireDistance = 1000; //Rg 600;
+    burst = 5;
+    aiRateOfFire = 5;
+    aiRateOfFireDistance = 1000;
     minRange = 600;minRangeProbab = 0.05;
-    midRange = 800;midRangeProbab = 0.4; //Rg 500;
-    maxRange = 1200;maxRangeProbab = 0.01; //Rg 600;
+    midRange = 800;midRangeProbab = 0.4;
+    maxRange = 1200;maxRangeProbab = 0.01;
   };
 };

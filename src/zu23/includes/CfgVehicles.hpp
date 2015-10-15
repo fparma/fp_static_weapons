@@ -1,7 +1,7 @@
 class fp_static_zu23_base : StaticCannon {
   mapSize = 2.5;
   cargoAction[] = {"ZU23_Gunner"};
-  displayname="ZU-23";
+  displayname="ZU-23-2";
   model="\FP_Static_Weapons\zu23\zu23";
   class Library {libTextDesc="asd";};
   icon= "\FP_Static_Weapons\zu23\icon\icomap_zu23_CA.paa";
@@ -42,7 +42,7 @@ class fp_static_zu23_base : StaticCannon {
         initAngleY = 0;
         minAngleY = -100;
         maxAngleY = 100;
-        initFov = 0.69999999;
+        initFov = 0.7;
         minFov = 0.25;
         maxFov = 1.1;
       };
@@ -53,9 +53,9 @@ class fp_static_zu23_base : StaticCannon {
         initAngleY = 0;
         minAngleY = -100;
         maxAngleY = 100;
-        initFov = 0.093000002;
-        minFov = 0.093000002;
-        maxFov = 0.093000002;
+        initFov = 0.093;
+        minFov = 0.093;
+        maxFov = 0.093;
       };
     };
   };

@@ -5,8 +5,7 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
   icon = "\FP_Static_Weapons\mk19\icon\icomap_mk19_stat_CA.paa";
   mapSize = 2.5;
   class Turrets: Turrets {
-    class MainTurret: MainTurret
-    {
+    class MainTurret: MainTurret {
       gunnerLeftHandAnimName = "otochlaven";
       gunnerRightHandAnimName = "otochlaven";
       gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
@@ -16,10 +15,10 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
       initTurn = 0;
       weapons[] = {"fp_static_weap_mk19"};
       magazines[] = {
-        "40Rnd_20mm_g_belt",
-        "40Rnd_20mm_g_belt",
-        "40Rnd_20mm_g_belt",
-        "40Rnd_20mm_g_belt"
+        "fp_static_mag_48rnd_mk19",
+        "fp_static_mag_48rnd_mk19",
+        "fp_static_mag_48rnd_mk19",
+        "fp_static_mag_48rnd_mk19"
       };
       gunnerAction = "MK19_Gunner";
     };

@@ -47,14 +47,17 @@ class CfgPatches {
         "fp_static_tow_b",
       {% endif %}
 
-      {% if weapons.tow %}
+      {% if weapons.mk19 %}
         "fp_static_mk19_b",
+      {% endif %}
+
+      {% if weapons.ags30 %}
+        "fp_static_ags30_b",
       {% endif %}
 
       {% if weapons.m119 %}
         "fp_static_m119_b"
       {% endif %}
-
     };
     weapons[] = {};
     requiredVersion = 0.1;
@@ -110,6 +113,10 @@ class CfgMovesBasic {
       TOW_Gunner = "TOW_Gunner";
     {% endif %}
     
+    {% if weapons.ags30 %}
+      AGS_Gunner = "AGS_Gunner";
+    {% endif %}
+    
     {% if weapons.mk19 %}
       MK19_Gunner = "MK19_Gunner";
     {% endif %}
@@ -137,6 +144,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     {% if weapons.m119 %}{% include "src/m119/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.tow %}{% include "src/tow/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.mk19 %}{% include "src/mk19/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.ags30 %}{% include "src/ags30/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -159,6 +167,7 @@ class CfgVehicles {
   {% if weapons.m119 %}{% include "src/m119/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.tow %}{% include "src/tow/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.ags30 %}{% include "src/ags30/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {
@@ -186,6 +195,7 @@ class CfgWeapons {
   {% if weapons.m119 %}{% include "src/m119/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.tow %}{% include "src/tow/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgWeapons.hpp" %}{% endif %}
+  {% if weapons.ags30 %}{% include "src/ags30/includes/CfgWeapons.hpp" %}{% endif %}
 };
 
 class CfgMagazines {
@@ -201,6 +211,7 @@ class CfgMagazines {
   {% if weapons.m119 %}{% include "src/m119/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.tow %}{% include "src/tow/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgMagazines.hpp" %}{% endif %}
+  {% if weapons.ags30 %}{% include "src/ags30/includes/CfgMagazines.hpp" %}{% endif %}
 };
 
 class CfgAmmo {
@@ -220,4 +231,5 @@ class CfgAmmo {
   {% if weapons.m119 %}{% include "src/m119/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.tow %}{% include "src/tow/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgAmmo.hpp" %}{% endif %}
+  {% if weapons.ags30 %}{% include "src/ags30/includes/CfgAmmo.hpp" %}{% endif %}
 };

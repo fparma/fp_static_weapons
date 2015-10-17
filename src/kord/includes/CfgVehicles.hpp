@@ -57,8 +57,35 @@ class fp_static_kord_base : StaticMGWeapon {
   };
   class Library {libTextDesc = "asd";};
 };
+class fp_static_kord_high_base : fp_static_kord_base {
+  displayName="Kord (High)";
+  model="\FP_Static_Weapons\kord\KORD_6u16sp";
+  icon="FP_Static_Weapons\kord\icon\icomap_kord6u16sp_CA.paa";
+  picture="\FP_Static_Weapons\kord\icon\kord6u16sp_ca.paa";
+  
+  class Turrets: Turrets
+  {
+    class MainTurret: MainTurret
+    {
+      minElev=-7;
+      maxelev = 45;
+      gunnerAction="KORD_Gunner";
+      minTurn=-180;
+      maxTurn=180;
+      initTurn=0;
+    };
+  };
+};
 
 class fp_static_kord_b : fp_static_kord_base {
+  scope = {{ SCOPE.PUBLIC }};
+  side = {{ SIDE.WEST }};
+  author = "{{ author }}";
+  faction = "{{ FACTION.NATO }}";
+  crew = "{{ UNIT.NATO }}";
+  typicalCargo[] = {"{{ UNIT.NATO }}"};
+};
+class fp_static_kord_high_b : fp_static_kord_high_base {
   scope = {{ SCOPE.PUBLIC }};
   side = {{ SIDE.WEST }};
   author = "{{ author }}";

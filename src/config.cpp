@@ -57,6 +57,7 @@ class CfgPatches {
       
       {% if weapons.kord %}
         "fp_static_kord_b",
+        "fp_static_kord_high_b",
       {% endif %}
 
       {% if weapons.m119 %}
@@ -123,6 +124,7 @@ class CfgMovesBasic {
     
     {% if weapons.kord %}
       LowKORD_Gunner = "LowKORD_Gunner";
+      KORD_Gunner = "KORD_Gunner";
     {% endif %}
     
     {% if weapons.mk19 %}

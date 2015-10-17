@@ -16,13 +16,7 @@ class fp_static_weap_zu23: CannonCore {
       effectName = "MachineGunCartridge1";
     };
   };
-  magazines[] = {
-    "fp_static_mag_2x50rnd_23mm_AZP85",
-    "fp_static_mag_2x50rnd_23mm_AZP85",
-    "fp_static_mag_2x50rnd_23mm_AZP85",
-    "fp_static_mag_2x50rnd_23mm_AZP85",
-    "fp_static_mag_2x50rnd_23mm_AZP85"
-  };
+  magazines[] = {"fp_static_mag_2x50rnd_23mm_AZP85"};
   magazineReloadTime = 9;
   modes[] = {
     "manual",

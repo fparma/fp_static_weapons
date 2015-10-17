@@ -17,7 +17,7 @@ class fp_static_kord_base : StaticMGWeapon {
       gunnerRightHandAnimName = "otochlaven_shake";
       selectionFireAnim = "zasleh";
       minElev = -20;
-      maxElev = 35;
+      maxElev = 20;
       minTurn = -180;
       maxTurn = 180;
       initTurn=0;

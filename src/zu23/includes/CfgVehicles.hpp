@@ -22,8 +22,12 @@ class fp_static_zu23_base : StaticCannon {
       initElev = 0;
       weapons[] = {"fp_static_weap_zu23"};
       magazines[] = {
-        "fp_static_mag_2000rnd_23mm_AZP85",
-        "fp_static_mag_2000rnd_23mm_AZP85"
+        "fp_static_mag_2x50rnd_23mm_AZP85",
+        "fp_static_mag_2x50rnd_23mm_AZP85",
+        "fp_static_mag_2x50rnd_23mm_AZP85",
+        "fp_static_mag_2x50rnd_23mm_AZP85",
+        "fp_static_mag_2x50rnd_23mm_AZP85",
+        "fp_static_mag_2x50rnd_23mm_AZP85"
       };
       gunnerAction = "ZU23_Gunner";
       selectionFireAnim = "zasleh";

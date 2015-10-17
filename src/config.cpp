@@ -60,6 +60,10 @@ class CfgPatches {
         "fp_static_kord_high_b",
       {% endif %}
 
+      {% if weapons.d30 %}
+        "fp_static_d30_b",
+      {% endif %}
+
       {% if weapons.m119 %}
         "fp_static_m119_b"
       {% endif %}
@@ -127,6 +131,12 @@ class CfgMovesBasic {
       KORD_Gunner = "KORD_Gunner";
     {% endif %}
     
+    {% if weapons.d30 %}
+      D30_Commander = "D30_Commander";
+      D30_Gunner = "D30_Gunner";
+      D30_Cargo = "D30_Cargo";
+    {% endif %}
+    
     {% if weapons.mk19 %}
       MK19_Gunner = "MK19_Gunner";
     {% endif %}
@@ -156,6 +166,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     {% if weapons.mk19 %}{% include "src/mk19/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.ags30 %}{% include "src/ags30/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.kord %}{% include "src/kord/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.d30 %}{% include "src/d30/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -180,6 +191,7 @@ class CfgVehicles {
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.ags30 %}{% include "src/ags30/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.kord %}{% include "src/kord/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.d30 %}{% include "src/d30/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {
@@ -209,6 +221,7 @@ class CfgWeapons {
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.ags30 %}{% include "src/ags30/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.kord %}{% include "src/kord/includes/CfgWeapons.hpp" %}{% endif %}
+  {% if weapons.d30 %}{% include "src/d30/includes/CfgWeapons.hpp" %}{% endif %}
 };
 
 class CfgMagazines {
@@ -226,6 +239,7 @@ class CfgMagazines {
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.ags30 %}{% include "src/ags30/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.kord %}{% include "src/kord/includes/CfgMagazines.hpp" %}{% endif %}
+  {% if weapons.d30 %}{% include "src/d30/includes/CfgMagazines.hpp" %}{% endif %}
 };
 
 class CfgAmmo {
@@ -247,4 +261,5 @@ class CfgAmmo {
   {% if weapons.mk19 %}{% include "src/mk19/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.ags30 %}{% include "src/ags30/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.kord %}{% include "src/kord/includes/CfgAmmo.hpp" %}{% endif %}
+  {% if weapons.d30 %}{% include "src/d30/includes/CfgAmmo.hpp" %}{% endif %}
 };

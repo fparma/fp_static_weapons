@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="RDS_StaticW\metis_at_13\data\metis_NOHQ.paa";
+	texture="FP_Static_Weapons\metis\data\metis_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="RDS_StaticW\data\Metal_rough_Half_DT.paa";
+	texture="FP_Static_Weapons\data\Metal_rough_Half_DT.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="RDS_StaticW\metis_at_13\data\metis_SMDI.paa";
+	texture="FP_Static_Weapons\metis\data\metis_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -78,5 +78,5 @@ class Stage7
 };
 class StageTI
 {
-	texture="RDS_StaticW\metis_at_13\data\metis_ti_ca.paa";
+	texture="FP_Static_Weapons\metis\data\metis_ti_ca.paa";
 };

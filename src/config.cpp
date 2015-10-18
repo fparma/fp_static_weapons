@@ -25,64 +25,23 @@
 class CfgPatches {
   class FP_Static_Weapons {
     units[] = {
-      {% if weapons.m2 %}
-        "fp_static_m2_b",
-        "fp_static_m2_minitripod_b",
-      {% endif %}
-
-      {% if weapons.dshkm %}
-        "fp_static_dshkm_b",
-        "fp_static_dshkm_minitripod_b",
-      {% endif %}
-
-      {% if weapons.zu23 %}
-        "fp_static_zu23_b",
-      {% endif %}
-
-      {% if weapons.spg9 %}
-        "fp_static_spg9_b",
-      {% endif %}
-
-      {% if weapons.tow %}
-        "fp_static_tow_b",
-      {% endif %}
-
-      {% if weapons.mk19 %}
-        "fp_static_mk19_b",
-      {% endif %}
-
-      {% if weapons.ags30 %}
-        "fp_static_ags30_b",
-      {% endif %}
-      
-      {% if weapons.kord %}
-        "fp_static_kord_b",
-        "fp_static_kord_high_b",
-      {% endif %}
-
-      {% if weapons.metis %}
-        "fp_static_metis_b",
-      {% endif %}
-
-      {% if weapons.d30 %}
-        "fp_static_d30_b",
-      {% endif %}
-
-      {% if weapons.m119 %}
-        "fp_static_m119_b"
-      {% endif %}
+      {% if weapons.m2 %}"fp_static_m2_b","fp_static_m2_minitripod_b",{% endif %}
+      {% if weapons.dshkm %}"fp_static_dshkm_b","fp_static_dshkm_minitripod_b",{% endif %}
+      {% if weapons.kord %}"fp_static_kord_b","fp_static_kord_high_b",{% endif %}
+      {% if weapons.zu23 %}"fp_static_zu23_b",{% endif %}
+      {% if weapons.spg9 %}"fp_static_spg9_b",{% endif %}
+      {% if weapons.tow %}"fp_static_tow_b",{% endif %}
+      {% if weapons.mk19 %}"fp_static_mk19_b",{% endif %}
+      {% if weapons.ags30 %}"fp_static_ags30_b",{% endif %}
+      {% if weapons.metis %}"fp_static_metis_b",{% endif %}
+      {% if weapons.d30 %}"fp_static_d30_b",{% endif %}
+      {% if weapons.m119 %}"fp_static_m119_b"{% endif %}
     };
     weapons[] = {};
     requiredVersion = 0.1;
     requiredAddons[] = {
-      
-      {% if weapons.ace_compat %}
-        "ace_main",
-      {% endif %}
-      {% if weapons.rhs_compat %}
-        "rhs_c_weapons",
-      {% endif %}
-      
+      {% if weapons.ace_compat %}"ace_main",{% endif %}
+      {% if weapons.rhs_compat %}"rhs_c_weapons",{% endif %}
       "A3_Static_F_Gamma",
       "A3_CargoPoses_F",
       "A3_Armor_F_Slammer",
@@ -97,58 +56,17 @@ class Mode_SemiAuto;
 class CfgMovesBasic {
   class DefaultDie;
   class ManActions {
-
-    {% if weapons.m2 %}
-      M2_Gunner = "M2_Gunner";
-      M2_Tripod_Gunner = "M2_Tripod_Gunner";
-    {% endif %}
-
-    {% if weapons.dshkm %}
-      DShKM_Gunner = "DShKM_Gunner";
-      DShKM_Tripod_Gunner = "DShKM_Tripod_Gunner";
-    {% endif %}
-
-    {% if weapons.spg9 %}
-      SPG_Gunner = "SPG_Gunner";
-    {% endif %}
-
-    {% if weapons.zu23 %}
-      ZU23_Gunner = "ZU23_Gunner";
-    {% endif %}
-
-    {% if weapons.m119 %}
-      M119_Commander = "M119_Commander";
-      M119_Gunner = "M119_Gunner";
-      M119_Cargo = "M119_Cargo";
-    {% endif %}
-    
-    {% if weapons.tow %}
-      TOW_Gunner = "TOW_Gunner";
-    {% endif %}
-    
-    {% if weapons.ags30 %}
-      AGS_Gunner = "AGS_Gunner";
-    {% endif %}
-    
-    {% if weapons.kord %}
-      LowKORD_Gunner = "LowKORD_Gunner";
-      KORD_Gunner = "KORD_Gunner";
-    {% endif %}
-    
-    {% if weapons.d30 %}
-      D30_Commander = "D30_Commander";
-      D30_Gunner = "D30_Gunner";
-      D30_Cargo = "D30_Cargo";
-    {% endif %}
-    
-    {% if weapons.metis %}
-      Metis_Gunner = "Metis_Gunner";
-    {% endif %}
-    
-    {% if weapons.mk19 %}
-      MK19_Gunner = "MK19_Gunner";
-    {% endif %}
-    
+    {% if weapons.m2 %}M2_Gunner = "M2_Gunner";M2_Tripod_Gunner = "M2_Tripod_Gunner";{% endif %}
+    {% if weapons.dshkm %}DShKM_Gunner = "DShKM_Gunner";DShKM_Tripod_Gunner = "DShKM_Tripod_Gunner";{% endif %}
+    {% if weapons.spg9 %}SPG_Gunner = "SPG_Gunner";{% endif %}
+    {% if weapons.zu23 %}ZU23_Gunner = "ZU23_Gunner";{% endif %}
+    {% if weapons.m119 %}M119_Commander = "M119_Commander";M119_Gunner = "M119_Gunner";M119_Cargo = "M119_Cargo";{% endif %}
+    {% if weapons.tow %}TOW_Gunner = "TOW_Gunner";{% endif %}
+    {% if weapons.ags30 %}AGS_Gunner = "AGS_Gunner";{% endif %}
+    {% if weapons.kord %}LowKORD_Gunner = "LowKORD_Gunner";KORD_Gunner = "KORD_Gunner";{% endif %}
+    {% if weapons.d30 %}D30_Commander = "D30_Commander";D30_Gunner = "D30_Gunner";D30_Cargo = "D30_Cargo";{% endif %}
+    {% if weapons.metis %}Metis_Gunner = "Metis_Gunner";{% endif %}
+    {% if weapons.mk19 %}MK19_Gunner = "MK19_Gunner";{% endif %}
 	};
 };
 
@@ -164,7 +82,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
       righHandIKBeg = 1;
       righHandIKEnd = 1;
     };
-
+    
     {% if weapons.m2 %}{% include "src/m2/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
@@ -190,7 +108,7 @@ class CfgVehicles {
   class StaticMGWeapon : StaticWeapon{};
   class StaticMortar : StaticWeapon{class ViewOptics;};
   class StaticGrenadeLauncher : StaticWeapon {class ViewOptics;};
-
+  
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgVehicles.hpp" %}{% endif %}
@@ -261,8 +179,8 @@ class CfgAmmo {
   class ShellBase : ShellCore{};
   class RocketBase : RocketCore{};
   class BulletBase : BulletCore{};
-  class B_35mm_AA;
   class B_127x108_Ball : BulletBase{};
+  class B_35mm_AA;
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgAmmo.hpp" %}{% endif %}

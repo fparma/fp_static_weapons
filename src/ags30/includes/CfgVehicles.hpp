@@ -1,5 +1,5 @@
 class fp_static_ags30_base: StaticGrenadeLauncher {
-  displayName = "AGS-30 (SAG-30 Tripod)";
+  displayName = "30mm AGS-30 (SAG-30 Tripod)";
   model = "\FP_Static_Weapons\ags30\AGS_static";
   picture = "\FP_Static_Weapons\ags30\icon\ags_static_ca.paa";
   icon = "\FP_Static_Weapons\ags30\icon\icomap_ags_ca.paa";

@@ -72,7 +72,7 @@ class CfgMovesBasic {
     {% if weapons.mk19 %}MK19_Gunner = "MK19_Gunner";{% endif %}
     {% if weapons.m252 %}{% endif %} {#/* Uses Default MK6Mortar Animations */#}
     {% if weapons.podnos %}{% endif %} {#/* Uses Default MK6Mortar Animations */#}
-    {% if weapons.igla %}Igla_Gunner = "Igla_Gunner";{% endif %} {#/* Uses Debug Animations */#}
+    {% if weapons.igla %}Igla_Gunner = "Igla_Gunner";{% endif %}
 	};
 };
 

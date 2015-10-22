@@ -7,6 +7,23 @@ class fp_static_kord_base : StaticMGWeapon {
   icon = "\FP_Static_Weapons\kord\icon\icomap_kord_ca.paa";
   mapSize = 3;
   displayName = ".50Cal Kord 6P50 (Tripod)";
+  
+  {% if ace_compat %}
+    {#/* ACE Cargo */#}
+    ace_cargo_canLoad = 1;
+    ace_cargo_size = 2;
+    ace_dragging_canCarry = 1;
+    ace_dragging_canDrag = 1;
+    ace_dragging_carryDirection = 0;
+    ace_dragging_carryPosition[] = {0,1.2,0};
+    ace_dragging_dragDirection = 0;
+    ace_dragging_dragPosition[] = {0,1.2,0};
+    
+    {#/* ACE Nightvision Settings */#}
+    ACE_NightVision_blur = 0.055;
+    ACE_NightVision_grain = 0.75;
+  {% endif %}
+  
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;
@@ -62,6 +79,22 @@ class fp_static_kord_high_base : fp_static_kord_base {
   model="\FP_Static_Weapons\kord\KORD_6u16sp";
   icon="FP_Static_Weapons\kord\icon\icomap_kord6u16sp_CA.paa";
   picture="\FP_Static_Weapons\kord\icon\kord6u16sp_ca.paa";
+  
+  {% if ace_compat %}
+    {#/* ACE Cargo */#}
+    ace_cargo_canLoad = 1;
+    ace_cargo_size = 2;
+    ace_dragging_canCarry = 1;
+    ace_dragging_canDrag = 1;
+    ace_dragging_carryDirection = 0;
+    ace_dragging_carryPosition[] = {0,1.2,0};
+    ace_dragging_dragDirection = 0;
+    ace_dragging_dragPosition[] = {0,1.2,0};
+    
+    {#/* ACE Nightvision Settings */#}
+    ACE_NightVision_blur = 0.055;
+    ACE_NightVision_grain = 0.75;
+  {% endif %}
   
   class Turrets: Turrets
   {

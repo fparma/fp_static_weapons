@@ -21,6 +21,7 @@ class fp_static_ammo_pg9v : RocketBase {
 };
 class fp_static_ammo_og9v : fp_static_ammo_pg9v {
 	{% if rhs_compat %}
+		{#/* We remove the Penetrators since OG is High-Explosive and does not really penetrate */#}
 		ais_ce_penetrators[] = {};
 	{% endif %}
 	

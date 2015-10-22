@@ -7,6 +7,23 @@ class fp_static_dshkm_base : StaticMGWeapon {
   icon = "\FP_Static_Weapons\dshkm\icon\icomap_DShKM_CA.paa";
   mapSize = 3;
   displayName = ".50Cal DShKM";
+  
+  {% if ace_compat %}
+    {#/* ACE Cargo */#}
+    ace_cargo_canLoad = 1;
+    ace_cargo_size = 2;
+    ace_dragging_canCarry = 1;
+    ace_dragging_canDrag = 1;
+    ace_dragging_carryDirection = 0;
+    ace_dragging_carryPosition[] = {0,1.2,0};
+    ace_dragging_dragDirection = 0;
+    ace_dragging_dragPosition[] = {0,1.2,0};
+    
+    {#/* ACE Nightvision Settings */#}
+    ACE_NightVision_blur = 0.055;
+    ACE_NightVision_grain = 0.75;
+  {% endif %}
+  
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;
@@ -46,6 +63,23 @@ class fp_static_dshkm_base : StaticMGWeapon {
 class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {
   displayName = ".50Cal DShKM (SAG-30 Tripod)";
   model = "\FP_Static_Weapons\dshkm\DShKM_mg2";
+  
+  {% if ace_compat %}
+    {#/* ACE Cargo */#}
+    ace_cargo_canLoad = 1;
+    ace_cargo_size = 1;
+    ace_dragging_canCarry = 1;
+    ace_dragging_canDrag = 1;
+    ace_dragging_carryDirection = 0;
+    ace_dragging_carryPosition[] = {0,1.2,0};
+    ace_dragging_dragDirection = 0;
+    ace_dragging_dragPosition[] = {0,1.2,0};
+    
+    {#/* ACE Nightvision Settings */#}
+    ACE_NightVision_blur = 0.055;
+    ACE_NightVision_grain = 0.75;
+  {% endif %}
+  
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       gunnerLeftHandAnimName = "otochlaven_shake";

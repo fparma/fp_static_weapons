@@ -23,8 +23,8 @@ class fp_static_d30_base : StaticCannon {
     {#/* ACE Cargo */#}
     ace_cargo_canLoad = 1;
     ace_cargo_size = 6;
-    ace_dragging_canCarry = 1;
-    ace_dragging_canDrag = 1;
+    ace_dragging_canCarry = 0;
+    ace_dragging_canDrag = 0;
     ace_dragging_carryDirection = 0;
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;

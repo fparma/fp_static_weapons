@@ -1,5 +1,5 @@
 class fp_static_mk19_base: StaticGrenadeLauncher {
-  displayName = "40mm MK19 Grenade Launcher";
+  displayName = "40mm MK19 (M3 Tripod)";
   model = "\FP_Static_Weapons\mk19\mk19_stat";
   picture = "\FP_Static_Weapons\mk19\icon\mk19_stat_CA.paa";
   icon = "\FP_Static_Weapons\mk19\icon\icomap_mk19_stat_CA.paa";

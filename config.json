@@ -1,8 +1,8 @@
 {
   "author"    : "FP Mod Team",
   "version"   : "0.0.1",
-  "rhs_compat": false,
-  "ace_compat": false,
+  "rhs_compat": true,
+  "ace_compat": true,
   
   "weapons"   : {
     "ags30"   : true,

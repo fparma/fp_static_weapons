@@ -1,6 +1,6 @@
 class fp_static_igla_base : StaticAAWeapon {
   gunnercansee = "2+4+8+32";
-  displayName = "Igla AA Rocket Vehicle";
+  displayName = "Igla 9M39 AA";
   mapsize = 2.8;
   model = "FP_Static_Weapons\igla\igla_AA_pod";
   icon = "FP_Static_Weapons\igla\icon\icomap_igla_aa_pod_CA.paa";

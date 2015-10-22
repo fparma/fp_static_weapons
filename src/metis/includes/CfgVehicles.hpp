@@ -1,5 +1,5 @@
 class fp_static_metis_base : StaticATWeapon {
-  displayname = "Metis AT Gun";
+  displayname = "AT-9K115 Metis-M";
   model = "\FP_Static_Weapons\metis\metis.p3d";
   icon="FP_Static_Weapons\metis\icon\icomap_metis_at13_CA.paa";
   picture="\FP_Static_Weapons\metis\icon\metis_at13_CA.paa";

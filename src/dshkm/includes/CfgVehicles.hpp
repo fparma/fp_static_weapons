@@ -6,7 +6,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\dshkm\icon\dshkm_mg_ca.paa";
   icon = "\FP_Static_Weapons\dshkm\icon\icomap_DShKM_CA.paa";
   mapSize = 3;
-  displayName = "DShKM";
+  displayName = ".50Cal DShKM";
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;
@@ -44,7 +44,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
 };
 
 class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {
-  displayName = "DShKM (SAG-30 Tripod)";
+  displayName = ".50Cal DShKM (SAG-30 Tripod)";
   model = "\FP_Static_Weapons\dshkm\DShKM_mg2";
   class Turrets : Turrets {
     class MainTurret : MainTurret {

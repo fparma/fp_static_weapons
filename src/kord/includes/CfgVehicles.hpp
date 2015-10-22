@@ -6,7 +6,7 @@ class fp_static_kord_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\kord\icon\kord_ca.paa";
   icon = "\FP_Static_Weapons\kord\icon\icomap_kord_ca.paa";
   mapSize = 3;
-  displayName = "Kord (Minitripod)";
+  displayName = ".50Cal Kord 6P50 (Tripod)";
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;
@@ -58,7 +58,7 @@ class fp_static_kord_base : StaticMGWeapon {
   class Library {libTextDesc = "asd";};
 };
 class fp_static_kord_high_base : fp_static_kord_base {
-  displayName="Kord (High)";
+  displayName=".50Cal Kord 6P50";
   model="\FP_Static_Weapons\kord\KORD_6u16sp";
   icon="FP_Static_Weapons\kord\icon\icomap_kord6u16sp_CA.paa";
   picture="\FP_Static_Weapons\kord\icon\kord6u16sp_ca.paa";

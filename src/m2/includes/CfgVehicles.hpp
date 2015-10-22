@@ -6,7 +6,7 @@ class fp_static_m2_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";
   icon = "\FP_Static_Weapons\m2\icon\icomap_m2_CA.paa";
   mapSize = 3;
-  displayName = "M2 Browning";
+  displayName = ".50Cal Browning M2";
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;
@@ -40,7 +40,7 @@ class fp_static_m2_base : StaticMGWeapon {
 };
 
 class fp_static_m2_minitripod_base : fp_static_m2_base {
-  displayName = "M2 Browning (M3 Tripod)";
+  displayName = ".50Cal Browning M2 (M3 Tripod)";
   model = "\FP_Static_Weapons\m2\m2_mg2";
   class Turrets : Turrets {
     class MainTurret : MainTurret {

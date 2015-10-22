@@ -1,7 +1,7 @@
 class fp_static_zu23_base : StaticCannon {
   mapSize = 2.5;
   cargoAction[] = {"ZU23_Gunner"};
-  displayname="ZU-23-2";
+  displayname="23mm ZU-23-2";
   model="\FP_Static_Weapons\zu23\zu23";
   class Library {libTextDesc="asd";};
   icon= "\FP_Static_Weapons\zu23\icon\icomap_zu23_CA.paa";

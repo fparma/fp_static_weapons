@@ -1,5 +1,5 @@
 class fp_static_spg9_base : StaticATWeapon {
-  displayName = "SPG-9 Kopye";
+  displayName = "73mm SPG-9 Kopye";
   model = "\FP_Static_Weapons\spg9\spg9.p3d";
 
   icon = "FP_Static_Weapons\spg9\icon\icon_spg9_CA.paa";

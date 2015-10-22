@@ -7,7 +7,7 @@ class fp_static_m119_base : StaticMortar {
   transportSoldier = 2;
   gunnerHasFlares = true;
 
-  displayName = "M119-A1 howitzer";
+  displayName = "105mm howitzer M119-A1";
 
   model = "\FP_Static_Weapons\m119\m119";
   picture = "\FP_Static_Weapons\m119\icon\M119_CA.paa";

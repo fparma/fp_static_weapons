@@ -34,6 +34,8 @@ class CfgPatches {
       {% if weapons.mk19 %}"fp_static_mk19_b",{% endif %}
       {% if weapons.ags30 %}"fp_static_ags30_b",{% endif %}
       {% if weapons.metis %}"fp_static_metis_b",{% endif %}
+      {% if weapons.m252 %}"fp_static_m252_b",{% endif %}
+      {% if weapons.podnos %}"fp_static_podnos_b",{% endif %}
       {% if weapons.d30 %}"fp_static_d30_b",{% endif %}
       {% if weapons.m119 %}"fp_static_m119_b"{% endif %}
     };
@@ -67,6 +69,8 @@ class CfgMovesBasic {
     {% if weapons.d30 %}D30_Commander = "D30_Commander";D30_Gunner = "D30_Gunner";D30_Cargo = "D30_Cargo";{% endif %}
     {% if weapons.metis %}Metis_Gunner = "Metis_Gunner";{% endif %}
     {% if weapons.mk19 %}MK19_Gunner = "MK19_Gunner";{% endif %}
+    {% if weapons.m252 %}{% endif %}
+    {% if weapons.podnos %}{% endif %}
 	};
 };
 
@@ -94,6 +98,8 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     {% if weapons.kord %}{% include "src/kord/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.d30 %}{% include "src/d30/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.metis %}{% include "src/metis/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.m252 %}{% include "src/m252/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.podnos %}{% include "src/podnos/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -108,6 +114,8 @@ class CfgVehicles {
   class StaticMGWeapon : StaticWeapon{};
   class StaticMortar : StaticWeapon{class ViewOptics;};
   class StaticGrenadeLauncher : StaticWeapon {class ViewOptics;};
+  class Mortar_01_base_F : StaticMortar{};
+  class B_Mortar_01_F : Mortar_01_base_F{};
   
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
@@ -120,6 +128,8 @@ class CfgVehicles {
   {% if weapons.kord %}{% include "src/kord/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.d30 %}{% include "src/d30/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.metis %}{% include "src/metis/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.m252 %}{% include "src/m252/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.podnos %}{% include "src/podnos/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {
@@ -151,6 +161,8 @@ class CfgWeapons {
   {% if weapons.kord %}{% include "src/kord/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.d30 %}{% include "src/d30/includes/CfgWeapons.hpp" %}{% endif %}
   {% if weapons.metis %}{% include "src/metis/includes/CfgWeapons.hpp" %}{% endif %}
+  {% if weapons.m252 %}{% include "src/m252/includes/CfgWeapons.hpp" %}{% endif %}
+  {% if weapons.podnos %}{% include "src/podnos/includes/CfgWeapons.hpp" %}{% endif %}
 };
 
 class CfgMagazines {
@@ -170,6 +182,8 @@ class CfgMagazines {
   {% if weapons.kord %}{% include "src/kord/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.d30 %}{% include "src/d30/includes/CfgMagazines.hpp" %}{% endif %}
   {% if weapons.metis %}{% include "src/metis/includes/CfgMagazines.hpp" %}{% endif %}
+  {% if weapons.m252 %}{% include "src/m252/includes/CfgMagazines.hpp" %}{% endif %}
+  {% if weapons.podnos %}{% include "src/podnos/includes/CfgMagazines.hpp" %}{% endif %}
 };
 
 class CfgAmmo {
@@ -193,4 +207,6 @@ class CfgAmmo {
   {% if weapons.kord %}{% include "src/kord/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.d30 %}{% include "src/d30/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.metis %}{% include "src/metis/includes/CfgAmmo.hpp" %}{% endif %}
+  {% if weapons.m252 %}{% include "src/m252/includes/CfgAmmo.hpp" %}{% endif %}
+  {% if weapons.podnos %}{% include "src/podnos/includes/CfgAmmo.hpp" %}{% endif %}
 };

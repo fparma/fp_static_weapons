@@ -1,4 +1,4 @@
-# Building the Addon
+# Building the Addon (Soon to be changed)
 In order to build the FP_Static_Weapons pack, you need to have the following tools:
 
 * NodeJS

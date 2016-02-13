@@ -1,4 +1,7 @@
 class fp_static_zu23_base : StaticCannon {
+  armor = 30;
+  armorStructural=10;
+  
   mapSize = 2.5;
   cargoAction[] = {"ZU23_Gunner"};
   displayname="23mm ZU-23-2";

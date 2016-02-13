@@ -1,4 +1,7 @@
 class fp_static_igla_base : StaticAAWeapon {
+  armor = 30;
+  armorStructural=10;
+  
   gunnercansee = "2+4+8+32";
   displayName = "Igla 9M39 AA";
   mapsize = 2.8;

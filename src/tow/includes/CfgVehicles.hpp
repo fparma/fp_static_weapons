@@ -1,4 +1,7 @@
 class fp_static_tow_base: StaticATWeapon {
+  armor = 30;
+  armorStructural=10;
+  
   mapSize = 2.5;
   picture = "\FP_Static_Weapons\tow\icon\tow_static_CA.paa";
   icon = "\FP_Static_Weapons\tow\icon\icomap_tow_static_CA.paa";

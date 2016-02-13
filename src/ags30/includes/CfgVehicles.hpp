@@ -4,7 +4,8 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
   picture = "\FP_Static_Weapons\ags30\icon\ags_static_ca.paa";
   icon = "\FP_Static_Weapons\ags30\icon\icomap_ags_ca.paa";
   mapSize = 2.5;
-  armor=150;
+  armor = 30;
+  armorStructural=10;
   
   {% if ace_compat %}
     {#/* ACE Cargo */#}

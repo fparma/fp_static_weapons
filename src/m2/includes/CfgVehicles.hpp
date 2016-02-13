@@ -1,6 +1,6 @@
 class fp_static_m2_base : StaticMGWeapon {
   armor = 30;
-  armorStructural = 1;
+  armorStructural=10;
 
   model = "\FP_Static_Weapons\m2\m2_mg";
   picture = "\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";

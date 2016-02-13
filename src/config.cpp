@@ -206,6 +206,7 @@ class CfgAmmo {
   class BulletBase : BulletCore{};
   class B_127x108_Ball : BulletBase{};
   class B_35mm_AA;
+  class M_Titan_AT;
 
   {% if weapons.m2 %}{% include "src/m2/includes/CfgAmmo.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgAmmo.hpp" %}{% endif %}

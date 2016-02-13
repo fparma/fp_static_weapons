@@ -27,7 +27,7 @@ class fp_static_tow_base: StaticATWeapon {
       minturn = -180;
       maxturn = 180;
       weapons[] = {"fp_static_weap_tow"};
-      magazines[] = {"5Rnd_GAT_missiles", "5Rnd_GAT_missiles", "5Rnd_GAT_missiles"};
+      magazines[] = {"fp_static_mag_tow", "fp_static_mag_tow", "fp_static_mag_tow"};
       gunnerAction = "TOW_Gunner";
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";

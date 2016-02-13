@@ -55,7 +55,6 @@ class fp_static_m2_base : StaticMGWeapon {
     class ReloadMagazine{source = "reloadmagazine";weapon = "HMG_M2";};
     class Revolving{source = "revolving";weapon = "HMG_M2";};
   };
-  class Library {libTextDesc = "asd";};
 };
 
 class fp_static_m2_minitripod_base : fp_static_m2_base {

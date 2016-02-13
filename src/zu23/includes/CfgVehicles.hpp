@@ -6,7 +6,6 @@ class fp_static_zu23_base : StaticCannon {
   cargoAction[] = {"ZU23_Gunner"};
   displayname="23mm ZU-23-2";
   model="\FP_Static_Weapons\zu23\zu23";
-  class Library {libTextDesc="asd";};
   icon= "\FP_Static_Weapons\zu23\icon\icomap_zu23_CA.paa";
   picture="\FP_Static_Weapons\zu23\icon\zu23_CA.paa";
   UiPicture="\FP_Static_Weapons\zu23\icon\zu23_CA.paa";

@@ -49,7 +49,6 @@ class fp_static_metis_base : StaticATWeapon {
       };
     };
   };
-  class Library {libTextDesc = "asd";};
 };
 
 class fp_static_metis_b : fp_static_metis_base {

@@ -59,7 +59,6 @@ class fp_static_dshkm_base : StaticMGWeapon {
     class Revolving : muzzle_source {source = "revolving";};
     class muzzleHMG_ROT : muzzle_source {source = "ammorandom";};
   };
-  class Library {libTextDesc = "asd";};
 };
 
 class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {

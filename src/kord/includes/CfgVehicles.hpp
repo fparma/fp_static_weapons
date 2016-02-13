@@ -74,7 +74,6 @@ class fp_static_kord_base : StaticMGWeapon {
       weapon="fp_static_weap_kord";
     };
   };
-  class Library {libTextDesc = "asd";};
 };
 class fp_static_kord_high_base : fp_static_kord_base {
   displayName=".50Cal Kord 6P50";

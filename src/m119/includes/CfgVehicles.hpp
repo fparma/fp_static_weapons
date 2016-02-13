@@ -66,8 +66,6 @@ class fp_static_m119_base : StaticMortar {
     class mainTurretT_source: maingunT_source {};
     class szpilki_source {source="user";animPeriod = 0.1;initPhase=0; };
   };
-
-  class Library {libTextDesc = "asd";};
   htMin = 1;
   htMax = 480;
   afMax = 0;

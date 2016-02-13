@@ -79,7 +79,6 @@ class fp_static_d30_base : StaticCannon {
       "FP_Static_Weapons\d30\data\d30_destruct.rvmat"
     };
   };
-  class Library {libTextDesc = "asd";};
   htMin = 1;
   htMax = 480;
   afMax = 0;

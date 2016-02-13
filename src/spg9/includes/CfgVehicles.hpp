@@ -44,7 +44,6 @@ class fp_static_spg9_base : StaticATWeapon {
       };
     };
   };
-  class Library {libTextDesc = "asd";};
 };
 
 class fp_static_spg9_b : fp_static_spg9_base {

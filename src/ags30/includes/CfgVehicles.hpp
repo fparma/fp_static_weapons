@@ -55,7 +55,6 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
       };
     };
   };
-  class Library {libTextDesc = "asd";};
 };
 class fp_static_ags30_b : fp_static_ags30_base {
   scope = {{ SCOPE.PUBLIC }};

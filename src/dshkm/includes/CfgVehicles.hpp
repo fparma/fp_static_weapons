@@ -6,7 +6,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\dshkm\icon\dshkm_mg_ca.paa";
   icon = "\FP_Static_Weapons\dshkm\icon\icomap_DShKM_CA.paa";
   mapSize = 3;
-  displayName = "12.7 DShKM";
+  displayName = "12.7mm DShKM";
   
   {% if ace_compat %}
     {#/* ACE Cargo */#}

@@ -14,6 +14,8 @@ class fp_static_searchlight_base: StaticSEARCHLight {
   typicalCargo[] = {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       weapons[] = {"SEARCHLIGHT"};
       minElev = -25;
       maxElev = 85;

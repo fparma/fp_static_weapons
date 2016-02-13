@@ -38,7 +38,8 @@ class CfgPatches {
       {% if weapons.podnos %}"fp_static_podnos_b",{% endif %}
       {% if weapons.igla %}"fp_static_igla_b",{% endif %}
       {% if weapons.d30 %}"fp_static_d30_b",{% endif %}
-      {% if weapons.m119 %}"fp_static_m119_b"{% endif %}
+      {% if weapons.m119 %}"fp_static_m119_b",{% endif %}
+      {% if weapons.search %}"fp_static_searchlight_b"{% endif %}
     };
     weapons[] = {};
     requiredVersion = 0.1;
@@ -72,6 +73,7 @@ class CfgMovesBasic {
     {% if weapons.mk19 %}MK19_Gunner = "MK19_Gunner";{% endif %}
     {% if weapons.m252 %}{% endif %} {#/* Uses Default MK6Mortar Animations */#}
     {% if weapons.podnos %}{% endif %} {#/* Uses Default MK6Mortar Animations */#}
+    {% if weapons.search %}searchlight_Gunner = "searchlight_Gunner";{% endif %}
     {% if weapons.igla %}Igla_Gunner = "Igla_Gunner";{% endif %}
 	};
 };
@@ -103,6 +105,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
     {% if weapons.m252 %}{% include "src/m252/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.podnos %}{% include "src/podnos/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.igla %}{% include "src/igla/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
+    {% if weapons.search %}{% include "src/searchlight/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
   };
 };
 
@@ -111,6 +114,7 @@ class CfgVehicles {
   class StaticWeapon : LandVehicle {
     class Turrets;
     class MainTurret;
+    class UserActions;
   };
   class StaticCannon : StaticWeapon {class ViewOptics;};
   class StaticATWeapon : StaticWeapon{};
@@ -135,6 +139,7 @@ class CfgVehicles {
   {% if weapons.m252 %}{% include "src/m252/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.podnos %}{% include "src/podnos/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.igla %}{% include "src/igla/includes/CfgVehicles.hpp" %}{% endif %}
+  {% if weapons.search %}{% include "src/searchlight/includes/CfgVehicles.hpp" %}{% endif %}
 };
 
 class CfgWeapons {

@@ -18,6 +18,7 @@
     "podnos"  : true,
     "spg9"    : true,
     "tow"     : true,
-    "zu23"    : true
+    "zu23"    : true,
+    "search"  : true
   }
 }

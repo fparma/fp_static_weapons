@@ -7,4 +7,4 @@ rm -rf build/FP_Static_Weapons/*/includes                               # Remove
 rm -rf build/FP_Static_Weapons/*/sounds/*.wav                           # Remove all .wav sound files
 rm -rf build/FP_Static_Weapons/*.md                                     # Remove Weapon Specific Markdown Documentation
 grunt                                                                   # Generate the config.cpp file.
-PBOConsole -pack build/FP_Static_Weapons build/FP_Static_Weapons.pbo    # Generate a PBO using PBOManager. TODO: Mikero's PBO Tools
+#PBOConsole -pack build/FP_Static_Weapons build/FP_Static_Weapons.pbo    # Generate a PBO using PBOManager. TODO: Mikero's PBO Tools

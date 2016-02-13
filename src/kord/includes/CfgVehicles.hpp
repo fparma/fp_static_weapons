@@ -6,7 +6,7 @@ class fp_static_kord_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\kord\icon\kord_ca.paa";
   icon = "\FP_Static_Weapons\kord\icon\icomap_kord_ca.paa";
   mapSize = 3;
-  displayName = ".50Cal Kord 6P50 (Tripod)";
+  displayName = "12.7mm Kord 6P50 (Tripod)";
   
   {% if ace_compat %}
     {#/* ACE Cargo */#}

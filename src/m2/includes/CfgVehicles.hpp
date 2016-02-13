@@ -6,7 +6,7 @@ class fp_static_m2_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";
   icon = "\FP_Static_Weapons\m2\icon\icomap_m2_CA.paa";
   mapSize = 3;
-  displayName = ".50Cal Browning M2";
+  displayName = "12.7mm Browning M2";
   
   {% if ace_compat %}
     {#/* ACE Cargo */#}

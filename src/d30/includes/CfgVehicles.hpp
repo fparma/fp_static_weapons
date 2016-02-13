@@ -3,7 +3,7 @@ class fp_static_d30_base : StaticCannon {
   cost = 10000;
   availableForSupportTypes[]={"Artillery"};
   artilleryScanner = 1;
-  displayName="122mm howitzer D-30";
+  displayName="122mm howitzer 2A18 (D-30)";
 
   model="\FP_Static_Weapons\D30\D30";
   icon= "\FP_Static_Weapons\d30\icon\icomap_d30_CA.paa";

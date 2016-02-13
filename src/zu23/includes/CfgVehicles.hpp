@@ -54,8 +54,8 @@ class fp_static_zu23_base : StaticCannon {
         "OpticsBlur2"
       };
       gunnerForceOptics = 0;
-      memoryPointsGetInGunner = "pos_gunner_dir";
-      memoryPointsGetInGunnerDir = "pos_gunner";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       class ViewGunner {
         initAngleX = 5;
         minAngleX = -30;

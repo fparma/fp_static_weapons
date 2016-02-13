@@ -41,8 +41,8 @@ class fp_static_m119_base : StaticMortar {
       gunnerAction = "M119_Gunner";
       gunnerOpticsModel = "\A3\Weapons_F\acc\reticle_Mortar_01_F.p3d";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
-      memoryPointsGetInGunner = "pos_gunner_dir";
-      memoryPointsGetInGunnerDir = "pos_gunner";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
 
       minElev = -9;
       maxelev = 80;

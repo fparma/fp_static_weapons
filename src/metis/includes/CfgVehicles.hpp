@@ -29,8 +29,8 @@ class fp_static_metis_base : StaticATWeapon {
       gunnerAction = "Metis_Gunner";
       gunnerOpticsModel = "\FP_Static_Weapons\metis\2Dscope_Metis";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
-      memoryPointsGetInGunner = "pos_gunner_dir";
-      memoryPointsGetInGunnerDir = "pos_gunner";				
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       minTurn=-45; maxTurn=+45; initTurn=0;
       minElev=-10; maxElev=+40; initElev=0;
       ejectDeadGunner = 0;

@@ -43,8 +43,8 @@ class fp_static_igla_base : StaticAAWeapon {
         "4Rnd_GAA_missiles"
       };
       maxelev = 120;
-      memorypointsgetingunner = "pos_gunner";
-      memorypointsgetingunnerdir = "pos_gunner_dir";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       minelev = -10;
       weapons[] = {"missiles_titan"};
       class ViewOptics {

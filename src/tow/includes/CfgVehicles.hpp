@@ -29,8 +29,8 @@ class fp_static_tow_base: StaticATWeapon {
       weapons[] = {"fp_static_weap_tow"};
       magazines[] = {"5Rnd_GAT_missiles", "5Rnd_GAT_missiles", "5Rnd_GAT_missiles"};
       gunnerAction = "TOW_Gunner";
-      memoryPointsGetInGunner = "pos_gunner_dir";
-      memoryPointsGetInGunnerDir = "pos_gunner";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       class ViewGunner {
         initAngleX = 5;
         minAngleX = -30;

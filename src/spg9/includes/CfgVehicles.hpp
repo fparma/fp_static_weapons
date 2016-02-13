@@ -23,8 +23,8 @@ class fp_static_spg9_base : StaticATWeapon {
       gunnerAction = "SPG_Gunner";
       gunnerOpticsModel = "\FP_Static_Weapons\spg9\2Dscope_SPG_4";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2","TankGunnerOptics1"};
-      memoryPointsGetInGunner = "pos_gunner_dir";
-      memoryPointsGetInGunnerDir = "pos_gunner";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       minTurn = -45; maxTurn = +45; initTurn = 0;
       minElev = -10; maxElev = +40; initElev = 0;
       ejectDeadGunner = 0;

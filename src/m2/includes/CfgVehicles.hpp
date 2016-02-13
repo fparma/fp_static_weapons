@@ -33,6 +33,8 @@ class fp_static_m2_base : StaticMGWeapon {
       gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
       gunnerLeftHandAnimName = "otochlaven_shake";
       gunnerRightHandAnimName = "otochlaven_shake";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       selectionFireAnim = "zasleh";
       minElev = -20;
       maxElev = 35;

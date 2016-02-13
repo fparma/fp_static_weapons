@@ -32,6 +32,8 @@ class fp_static_kord_base : StaticMGWeapon {
       discreteDistanceInitIndex = 2;
       gunnerLeftHandAnimName = "otochlaven_shake";
       gunnerRightHandAnimName = "otochlaven_shake";
+      memoryPointsGetInGunner = "pos_gunner";
+      memoryPointsGetInGunnerDir = "pos_gunner_dir";
       selectionFireAnim = "zasleh";
       minElev = -20;
       maxElev = 20;

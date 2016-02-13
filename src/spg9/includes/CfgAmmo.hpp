@@ -1,9 +1,4 @@
 class fp_static_ammo_pg9v : RocketBase {
-	{% if rhs_compat %}
-		{#/* This may be Overly Strong. testing required. Maybe turn down the Damage */#}
-		ais_ce_penetrators[] = {"rhs_ammo_pg15v_penetrator"};
-	{% endif %}
-	
 	hit = 320;
 	indirectHit = 20;
 	indirectHitRange = 1.2;
@@ -20,11 +15,6 @@ class fp_static_ammo_pg9v : RocketBase {
   effectsMissile = "missile2";
 };
 class fp_static_ammo_og9v : fp_static_ammo_pg9v {
-	{% if rhs_compat %}
-		{#/* We remove the Penetrators since OG is High-Explosive and does not really penetrate */#}
-		ais_ce_penetrators[] = {};
-	{% endif %}
-	
 	hit = 140;
 	indirectHit = 45;
 	indirectHitRange = 10;

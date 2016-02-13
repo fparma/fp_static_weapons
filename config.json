@@ -1,7 +1,6 @@
 {
   "author"    : "FP Mod Team",
   "version"   : "0.0.1",
-  "rhs_compat": true,
   "ace_compat": true,
   
   "weapons"   : {

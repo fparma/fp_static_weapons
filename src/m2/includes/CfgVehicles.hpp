@@ -58,7 +58,7 @@ class fp_static_m2_base : StaticMGWeapon {
 };
 
 class fp_static_m2_minitripod_base : fp_static_m2_base {
-  displayName = ".50Cal Browning M2 (M3 Tripod)";
+  displayName = "12.7mm Browning M2 (M3 Tripod)";
   model = "\FP_Static_Weapons\m2\m2_mg2";
   
   {% if ace_compat %}

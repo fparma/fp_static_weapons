@@ -13,7 +13,7 @@ In the future, this mod may also incorporate new Static assets and assets missin
 * [Templating System introduction](https://github.com/fparma/fp_static_weapons/blob/master/doc/templating_system.md)
 
 ## Licensing
-### General / CPP
+### General / Config Files
 This project is licensed under the Creative Commons 4.0 BY-NC-SA License, due to this being a fork of RDS Static Weapons:
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 

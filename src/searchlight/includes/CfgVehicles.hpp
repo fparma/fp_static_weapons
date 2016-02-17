@@ -65,7 +65,7 @@ class fp_static_searchlight_base: StaticSEARCHLight {
     mat[] =  {
       "FP_Static_Weapons\searchlight\data\searchlight_manual.rvmat","FP_Static_Weapons\searchlight\data\searchlight_manual_damage.rvmat","FP_Static_Weapons\searchlight\data\searchlight_manual_damage.rvmat",
       "FP_Static_Weapons\searchlight\data\m2_stojan.rvmat","FP_Static_Weapons\searchlight\data\m2_stojan_damage.rvmat","FP_Static_Weapons\searchlight\data\m2_stojan_damage.rvmat",
-      "FP_Static_Weapons\searchlight\data\searchlight_manual_glass.rvmat","FP_Static_Weapons\searchlight\data\searchlight_manual_glass_destruct.rvmat","FP_Static_Weapons\searchlight\data\searchlight_manual_glass_destruct.rvmat",
+      "FP_Static_Weapons\searchlight\data\searchlight_manual_glass.rvmat","FP_Static_Weapons\searchlight\data\searchlight_manual_glass_destruct.rvmat","FP_Static_Weapons\searchlight\data\searchlight_manual_glass_destruct.rvmat"
     };
   };
 

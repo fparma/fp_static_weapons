@@ -3,4 +3,4 @@ class fp_static_ammo_tow : M_Titan_AT {
   hit = 950;
   thrust = 300;
   effectsMissile = "missile2";
-}
+};

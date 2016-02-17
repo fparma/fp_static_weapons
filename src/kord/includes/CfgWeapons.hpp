@@ -15,7 +15,7 @@ class fp_static_weap_kord: MGun {
   
   scope = {{ SCOPE.PUBLIC }};
   displayName = "Kord Weapon";
-  magazines[] = {"fp_static_mag_50rnd_dshkm"};
+  magazines[] = {"fp_static_mag_50rnd_kord"};
   magazineReloadTime = 6;
   aiDispersionCoefY=15; //7.0;// better that DShKM
   aiDispersionCoefX=15;   // better that DShKM

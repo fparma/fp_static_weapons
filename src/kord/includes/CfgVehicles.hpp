@@ -42,12 +42,14 @@ class fp_static_kord_base : StaticMGWeapon {
       initTurn=0;
       weapons[] = {"fp_static_weap_kord"};
       magazines[] = {
-        "fp_static_mag_50rnd_dshkm",
-        "fp_static_mag_50rnd_dshkm",
-        "fp_static_mag_50rnd_dshkm",
-        "fp_static_mag_50rnd_dshkm",
-        "fp_static_mag_50rnd_dshkm",
-        "fp_static_mag_50rnd_dshkm"
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord",
+        "fp_static_mag_50rnd_kord"
       };
       gunnerAction = "LowKORD_Gunner";
       

@@ -40,7 +40,7 @@ class fp_static_weap_kord: MGun {
     minRange=1;minRangeProbab=0.01;
     midRange=2;midRangeProbab=0.01;
     maxRange=3;maxRangeProbab=0.01;
-  }
+  };
   class close: manual {
     showToPlayer = false;
     soundBurst = false;

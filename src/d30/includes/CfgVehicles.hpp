@@ -44,7 +44,7 @@ class fp_static_d30_base : StaticCannon {
         "32Rnd_155mm_Mo_shells","2Rnd_155mm_Mo_guided","2Rnd_155mm_Mo_guided","6Rnd_155mm_Mo_mine","2Rnd_155mm_Mo_Cluster","6Rnd_155mm_Mo_smoke","2Rnd_155mm_Mo_LG","6Rnd_155mm_Mo_AT_mine"
       };
       gunnerAction = "D30_Gunner";
-      gunnerOpticsModel = "\A3\Weapons_F\acc\reticle_Mortar_01_F.p3d";
+      gunnerOpticsModel = "\FP_Static_Weapons\m119\optika_M119.p3d";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";

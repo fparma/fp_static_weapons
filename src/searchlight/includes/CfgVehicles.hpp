@@ -27,7 +27,7 @@ class fp_static_searchlight_base: StaticSEARCHLight {
       ejectDeadGunner = true;
     };
   };
-  
+
   class Reflectors {
     class main_reflector {
       color[] = {9500,9000,8500};

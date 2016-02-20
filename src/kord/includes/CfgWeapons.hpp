@@ -12,7 +12,7 @@ class fp_static_weap_kord: MGun {
       effectName="MachineGunCartridge2";
     };
   };
-  
+
   scope = {{ SCOPE.PUBLIC }};
   displayName = "Kord Weapon";
   magazines[] = {"fp_static_mag_50rnd_kord"};

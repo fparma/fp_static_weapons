@@ -4,4 +4,3 @@ class LowKORD_Gunner: MG_Gunner_Base {
 class KORD_Gunner: MG_Gunner_Base {
   file = "FP_Static_Weapons\kord\anim\standingGunner.rtm";
 };
-

@@ -22,6 +22,15 @@
   "AAF"  : "I_Soldier_F"
 } -%}
 
+#define ASSEMBLE_INFO(bagName, tripodName) \
+  class assembleInfo { \
+    primary = 0; \
+    base = ""; \
+    assembleTo = ""; \
+    dissasembleTo[] = {bagName, tripodName}; \
+    displayName = ""; \
+  };
+
 class CfgPatches {
   class FP_Static_Weapons {
     units[] = {
@@ -74,7 +83,7 @@ class CfgMovesBasic {
     {% if weapons.podnos %}{% endif %} {#/* Uses Default MK6Mortar Animations */#}
     {% if weapons.search %}searchlight_Gunner = "searchlight_Gunner";{% endif %}
     {% if weapons.igla %}Igla_Gunner = "Igla_Gunner";{% endif %}
-	};
+  };
 };
 
 class CfgMovesMaleSdr : CfgMovesBasic {
@@ -89,7 +98,7 @@ class CfgMovesMaleSdr : CfgMovesBasic {
       righHandIKBeg = 1;
       righHandIKEnd = 1;
     };
-    
+
     {% if weapons.m2 %}{% include "src/m2/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
     {% if weapons.spg9 %}{% include "src/spg9/includes/CfgMovesMaleSdr.hpp" %}{% endif %}
@@ -115,6 +124,12 @@ class CfgVehicles {
     class MainTurret;
     class UserActions;
   };
+
+  class Bag_Base;
+  class Weapon_Bag_Base: Bag_Base{
+    class assembleInfo;
+  };
+
   class StaticCannon : StaticWeapon {class ViewOptics;};
   class StaticATWeapon : StaticWeapon{};
   class StaticMGWeapon : StaticWeapon{};
@@ -123,7 +138,7 @@ class CfgVehicles {
   class StaticGrenadeLauncher : StaticWeapon {class ViewOptics;};
   class Mortar_01_base_F : StaticMortar{};
   class B_Mortar_01_F : Mortar_01_base_F{};
-  
+
   {% if weapons.m2 %}{% include "src/m2/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.dshkm %}{% include "src/dshkm/includes/CfgVehicles.hpp" %}{% endif %}
   {% if weapons.spg9 %}{% include "src/spg9/includes/CfgVehicles.hpp" %}{% endif %}
@@ -153,7 +168,7 @@ class CfgWeapons {
   class HMG_127 : LMG_RCWS{};
   class HMG_01 : HMG_127{};
   class HMG_M2 : HMG_01{class manual;};
-    
+
   class cannon_120mm : CannonCore{};
   class MissileLauncher : LauncherCore{};
   class mortar_155mm_AMOS : CannonCore{};

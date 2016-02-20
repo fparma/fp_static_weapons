@@ -6,8 +6,8 @@ class fp_static_kord_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\kord\icon\kord_ca.paa";
   icon = "\FP_Static_Weapons\kord\icon\icomap_kord_ca.paa";
   mapSize = 3;
-  displayName = "12.7mm Kord 6P50-1 (6T7 Tripod)";
-  
+  displayName = "KORD (6T7)"; //12.7mm Kord 6P50-1 (6T7 Tripod)
+
   {% if ace_compat %}
     {#/* ACE Cargo */#}
     ace_cargo_canLoad = 1;
@@ -18,12 +18,12 @@ class fp_static_kord_base : StaticMGWeapon {
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.2,0};
-    
+
     {#/* ACE Nightvision Settings */#}
     ACE_NightVision_blur = 0.055;
     ACE_NightVision_grain = 0.75;
   {% endif %}
-  
+
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;
@@ -52,14 +52,14 @@ class fp_static_kord_base : StaticMGWeapon {
         "fp_static_mag_50rnd_kord"
       };
       gunnerAction = "LowKORD_Gunner";
-      
+
       gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
       class ViewOptics {
         initAngleX=0; minAngleX=-30; maxAngleX=+30;
         initAngleY=0; minAngleY=-100; maxAngleY=+100;
         initFov=0.7; minFov=0.25; maxFov=1.1;
       };
-      
+
     };
   };
   class AnimationSources {
@@ -78,11 +78,11 @@ class fp_static_kord_base : StaticMGWeapon {
   };
 };
 class fp_static_kord_high_base : fp_static_kord_base {
-  displayName=".50Cal Kord 6P50 (6U16 Mount)";
+  displayName="KORD (6U16)"; //.50Cal Kord 6P50 (6U16 Mount)
   model="\FP_Static_Weapons\kord\KORD_6u16sp";
   icon="FP_Static_Weapons\kord\icon\icomap_kord6u16sp_CA.paa";
   picture="\FP_Static_Weapons\kord\icon\kord6u16sp_ca.paa";
-  
+
   {% if ace_compat %}
     {#/* ACE Cargo */#}
     ace_cargo_canLoad = 1;
@@ -93,12 +93,12 @@ class fp_static_kord_high_base : fp_static_kord_base {
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.2,0};
-    
+
     {#/* ACE Nightvision Settings */#}
     ACE_NightVision_blur = 0.055;
     ACE_NightVision_grain = 0.75;
   {% endif %}
-  
+
   class Turrets: Turrets
   {
     class MainTurret: MainTurret

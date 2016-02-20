@@ -7,7 +7,7 @@ class fp_static_m119_base : StaticMortar {
   transportSoldier = 2;
   gunnerHasFlares = true;
 
-  displayName = "105mm howitzer M119-A1";
+  displayName = "M119A2"; //105mm howitzer M119-A1
 
   model = "\FP_Static_Weapons\m119\m119";
   picture = "\FP_Static_Weapons\m119\icon\M119_CA.paa";
@@ -26,7 +26,7 @@ class fp_static_m119_base : StaticMortar {
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.2,0};
-    
+
     {#/* ACE Nightvision Settings */#}
     ACE_NightVision_blur = 0.055;
     ACE_NightVision_grain = 0.75;

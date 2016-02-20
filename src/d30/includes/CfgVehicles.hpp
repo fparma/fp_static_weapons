@@ -3,7 +3,7 @@ class fp_static_d30_base : StaticCannon {
   cost = 10000;
   availableForSupportTypes[]={"Artillery"};
   artilleryScanner = 1;
-  displayName="122mm howitzer 2A18 (D-30)";
+  displayName="2A18M (D-30A)"; //122mm howitzer 2A18 (D-30)
 
   model="\FP_Static_Weapons\D30\D30";
   icon= "\FP_Static_Weapons\d30\icon\icomap_d30_CA.paa";
@@ -15,10 +15,10 @@ class fp_static_d30_base : StaticCannon {
   typicalCargo[]={"I_Soldier_F","I_Soldier_F","I_Soldier_F"};
   transportSoldier = 2;
   gunnerHasFlares = true;
-  
+
   memoryPointsGetInCargo = "pos_cargo_dir";
-  memoryPointsGetInCargoDir = "pos_cargo";		
-  
+  memoryPointsGetInCargoDir = "pos_cargo";
+
   {% if ace_compat %}
     {#/* ACE Cargo */#}
     ace_cargo_canLoad = 1;
@@ -29,18 +29,18 @@ class fp_static_d30_base : StaticCannon {
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.2,0};
-    
+
     {#/* ACE Nightvision Settings */#}
     ACE_NightVision_blur = 0.055;
     ACE_NightVision_grain = 0.75;
   {% endif %}
-  
+
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       gunBeg="Usti hlavne";
       gunEnd="Konec hlavne";
       weapons[]={"fp_static_weap_d30"};
-      magazines[] = { 
+      magazines[] = {
         "32Rnd_155mm_Mo_shells","2Rnd_155mm_Mo_guided","2Rnd_155mm_Mo_guided","6Rnd_155mm_Mo_mine","2Rnd_155mm_Mo_Cluster","6Rnd_155mm_Mo_smoke","2Rnd_155mm_Mo_LG","6Rnd_155mm_Mo_AT_mine"
       };
       gunnerAction = "D30_Gunner";
@@ -48,7 +48,7 @@ class fp_static_d30_base : StaticCannon {
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
-      
+
       minElev=-9;
       maxelev = 80;
       minTurn=-180;

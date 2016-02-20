@@ -1,11 +1,11 @@
 class fp_static_tow_base: StaticATWeapon {
   armor = 30;
   armorStructural=10;
-  
+
   mapSize = 2.5;
   picture = "\FP_Static_Weapons\tow\icon\tow_static_CA.paa";
   icon = "\FP_Static_Weapons\tow\icon\icomap_tow_static_CA.paa";
-  displayname = "BGM-71 TOW";
+  displayname = "M41A4 TOW"; //BGM-71 TOW
 
   {% if ace_compat %}
     {#/* ACE Cargo */#}
@@ -17,7 +17,7 @@ class fp_static_tow_base: StaticATWeapon {
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.2,0};
-    
+
     {#/* ACE Nightvision Settings */#}
     ACE_NightVision_blur = 0.055;
     ACE_NightVision_grain = 0.75;

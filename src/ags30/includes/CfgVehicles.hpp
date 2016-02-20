@@ -1,12 +1,12 @@
 class fp_static_ags30_base: StaticGrenadeLauncher {
-  displayName = "30mm AGS-30 (SAG-30 Tripod)";
+  displayName = "AGS-30 (6P17)"; //30mm AGS-30 (SAG-30 Tripod)
   model = "\FP_Static_Weapons\ags30\AGS_static";
   picture = "\FP_Static_Weapons\ags30\icon\ags_static_ca.paa";
   icon = "\FP_Static_Weapons\ags30\icon\icomap_ags_ca.paa";
   mapSize = 2.5;
   armor = 30;
   armorStructural=10;
-  
+
   {% if ace_compat %}
     {#/* ACE Cargo */#}
     ace_cargo_canLoad = 1;
@@ -17,12 +17,12 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
     ace_dragging_carryPosition[] = {0,1.2,0};
     ace_dragging_dragDirection = 0;
     ace_dragging_dragPosition[] = {0,1.2,0};
-    
+
     {#/* ACE Nightvision Settings */#}
     ACE_NightVision_blur = 0.055;
     ACE_NightVision_grain = 0.75;
   {% endif %}
-  
+
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       gunnerLeftHandAnimName = "otochlaven";
@@ -35,7 +35,7 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
       minElev=-10;maxelev = 32;
       minTurn=-90; maxTurn=+90;
       initTurn=0;
-      
+
       weapons[] = {"fp_static_weap_ags30"};
       magazines[] = {
         "fp_static_mag_48rnd_ags30",
@@ -44,7 +44,7 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
         "fp_static_mag_48rnd_ags30"
       };
       gunnerAction = "AGS_Gunner";
-      
+
       class ViewGunner {
         initAngleX=5; minAngleX=-30; maxAngleX=+30;
         initAngleY=0; minAngleY=-100; maxAngleY=+100;

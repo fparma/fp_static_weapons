@@ -7,4 +7,5 @@ class fp_static_weap_tow : missiles_titan {
     soundBegin[] = {"begin1",1};
   };
   magazines[] = {"fp_static_mag_tow"};
+  reloadTime=8.0;
 };

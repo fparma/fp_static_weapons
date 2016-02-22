@@ -52,7 +52,6 @@ class CfgPatches {
     weapons[] = {};
     requiredVersion = 0.1;
     requiredAddons[] = {
-      {% if weapons.ace_compat %}"ace_main",{% endif %}
       "A3_Static_F_Gamma",
       "A3_CargoPoses_F",
       "A3_Armor_F_Slammer",

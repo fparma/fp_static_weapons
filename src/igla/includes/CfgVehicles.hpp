@@ -10,22 +10,6 @@ class fp_static_igla_base : StaticAAWeapon {
   picture="\FP_Static_Weapons\igla\icon\igla_aa_pod_ca.paa";
   UiPicture="\FP_Static_Weapons\igla\icon\igla_aa_pod_ca.paa";
 
-  {% if ace_compat %}
-    {#/* ACE Cargo */#}
-    ace_cargo_canLoad = 1;
-    ace_cargo_size = 4;
-    ace_dragging_canCarry = 1;
-    ace_dragging_canDrag = 1;
-    ace_dragging_carryDirection = 0;
-    ace_dragging_carryPosition[] = {0,1.2,0};
-    ace_dragging_dragDirection = 0;
-    ace_dragging_dragPosition[] = {0,1.2,0};
-
-    {#/* ACE Nightvision Settings */#}
-    ACE_NightVision_blur = 0.055;
-    ACE_NightVision_grain = 0.75;
-  {% endif %}
-
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       minTurn=-180;

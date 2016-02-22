@@ -1,5 +1,5 @@
 class fp_static_ammo_23mm_aa: B_35mm_AA {
-  hit=90;indirectHit=30;indirectHitRange=0.3;
+  hit=55;indirectHit=30;indirectHitRange=0.3;
   visibleFire=32;
   audibleFire=32;
   visibleFireTime=4;

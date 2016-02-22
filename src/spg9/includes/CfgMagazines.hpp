@@ -1,6 +1,6 @@
 class fp_static_mag_pg9v : CA_LauncherMagazine {
-  scope = {{ SCOPE.PROTECTED }};
-  author = "{{ author }}";
+  scope = PROTECTED;
+  author = AUTHOR;
   displayName = "PG-9V - HEAT";
   displayNameShort = "PG-9V - HEAT";
   descriptionShort = "asd";

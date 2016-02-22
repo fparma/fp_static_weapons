@@ -31,10 +31,10 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
   };
 };
 class fp_static_mk19_b : fp_static_mk19_base {
-  scope = {{ SCOPE.PUBLIC }};
-  side = {{ SIDE.WEST }};
-  author = "{{ author }}";
-  faction = "{{ FACTION.NATO }}";
-  crew = "{{ UNIT.NATO }}";
-  typicalCargo[] = {"{{ UNIT.NATO }}"};
+  scope = PUBLIC;
+  side = WEST;
+  author = AUTHOR;
+  faction = FACTION_NATO;
+  crew = UNIT_NATO;
+  typicalCargo[] = {UNIT_NATO};
 };

@@ -14,7 +14,7 @@ class fp_static_weap_dshkm : MGun {
     };
   };
 
-  scope = {{ SCOPE.PUBLIC }};
+  scope = PUBLIC;
   displayName = "DShKM";
   magazines[] = {
     "fp_static_mag_50rnd_dshkm",

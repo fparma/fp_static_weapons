@@ -1,5 +1,5 @@
 class fp_static_mag_50rnd_kord : VehicleMagazine {
-  scope = {{ SCOPE.PUBLIC }};
+  scope = PUBLIC;
   displayName = "50Rnd Kord Mag";
   ammo = "fp_static_ammo_dshkm_ball";
   count = 50;

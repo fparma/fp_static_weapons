@@ -1,5 +1,5 @@
 class fp_static_weap_metis : missiles_titan {
-  scope = {{ SCOPE.PUBLIC }};
+  scope = PUBLIC;
   displayName = "9P151 launcher (Metis-M)";
   canLock = 2;
   class StandardSound {

@@ -1,25 +1,17 @@
-{%- set SIDE = {
-  "NONE" : -1,
-  "EAST" : 0,
-  "WEST" : 1,
-  "IND"  : 2,
-  "CIV"  : 3
-} -%}
-{% set SCOPE = {
-  "PRIVATE"   : 0,
-  "PROTECTED" : 1,
-  "PUBLIC"    : 2
-} -%}
-{% set FACTION = {
-  "NATO" : "BLU_F",
-  "CSAT" : "OPF_F",
-  "AAF"  : "IND_F"
-} -%}
-{% set UNIT = {
-  "NATO" : "B_Soldier_F",
-  "CSAT" : "O_Soldier_F",
-  "AAF"  : "I_Soldier_F"
-} -%}
+#define NONE -1
+#define EAST 0
+#define WEST 1
+#define IND 2
+#define CIV 3
+
+#define PRIVATE 0
+#define PROTECTED 1
+#define PUBLIC 2
+
+#define FACTION_NATO "BLU_F"
+#define UNIT_NATO "B_Soldier_F"
+
+#define AUTHOR "FP Mod Team"
 
 #define ASSEMBLE_INFO(bagName, tripodName) \
   class assembleInfo { \

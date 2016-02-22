@@ -99,6 +99,6 @@ class fp_static_searchlight_base: StaticSEARCHLight {
 class fp_static_searchlight_b: fp_static_searchlight_base {
   scope = 2;
   side = 1;
-  faction = "BLU_F";
-  crew = "B_Soldier_lite_F";
+  faction = FACTION_NATO;
+  crew = UNIT_NATO;
 };

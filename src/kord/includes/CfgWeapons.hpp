@@ -13,7 +13,7 @@ class fp_static_weap_kord: MGun {
     };
   };
 
-  scope = {{ SCOPE.PUBLIC }};
+  scope = PUBLIC;
   displayName = "Kord Weapon";
   magazines[] = {"fp_static_mag_50rnd_kord"};
   magazineReloadTime = 6;

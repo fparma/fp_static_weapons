@@ -84,18 +84,18 @@ class fp_static_kord_high_base : fp_static_kord_base {
 };
 
 class fp_static_kord_b : fp_static_kord_base {
-  scope = {{ SCOPE.PUBLIC }};
-  side = {{ SIDE.WEST }};
-  author = "{{ author }}";
-  faction = "{{ FACTION.NATO }}";
-  crew = "{{ UNIT.NATO }}";
-  typicalCargo[] = {"{{ UNIT.NATO }}"};
+  scope = PUBLIC;
+  side = WEST;
+  author = AUTHOR;
+  faction = FACTION_NATO;
+  crew = UNIT_NATO;
+  typicalCargo[] = {UNIT_NATO};
 };
 class fp_static_kord_high_b : fp_static_kord_high_base {
-  scope = {{ SCOPE.PUBLIC }};
-  side = {{ SIDE.WEST }};
-  author = "{{ author }}";
-  faction = "{{ FACTION.NATO }}";
-  crew = "{{ UNIT.NATO }}";
-  typicalCargo[] = {"{{ UNIT.NATO }}"};
+  scope = PUBLIC;
+  side = WEST;
+  author = AUTHOR;
+  faction = FACTION_NATO;
+  crew = UNIT_NATO;
+  typicalCargo[] = {UNIT_NATO};
 };

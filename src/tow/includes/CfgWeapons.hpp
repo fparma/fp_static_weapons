@@ -1,5 +1,5 @@
 class fp_static_weap_tow : missiles_titan {
-  scope = {{ SCOPE.PUBLIC }};
+  scope = PUBLIC;
   displayName = "BGM-71 TOW";
   canLock = 2;
   class StandardSound {

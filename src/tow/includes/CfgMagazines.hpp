@@ -1,6 +1,6 @@
 class fp_static_mag_tow : VehicleMagazine {
-  scope = {{ SCOPE.PROTECTED }};
-  author = "{{ author }}";
+  scope = PROTECTED;
+  author = AUTHOR;
   displayName = "5Rnd BGM-71 TOW";
   displayNameShort = "AT";
   ammo = "fp_static_ammo_tow";

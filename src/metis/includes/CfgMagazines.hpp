@@ -1,6 +1,6 @@
 class fp_static_mag_metis : VehicleMagazine {
-  scope = {{ SCOPE.PROTECTED }};
-  author = "{{ author }}";
+  scope = PROTECTED;
+  author = AUTHOR;
   displayName = "5Rnd 9M131 (Metis-M)";
   displayNameShort = "AT";
   ammo = "fp_static_ammo_metis";
@@ -17,4 +17,3 @@ class fp_static_mag_metis : VehicleMagazine {
   weaponPoolAvailable = 0;
   value = 1;
 };
-

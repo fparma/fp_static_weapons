@@ -24,8 +24,8 @@ class fp_static_metis_base : StaticATWeapon {
 
   class Turrets: Turrets {
     class MainTurret: MainTurret {
-      weapons[]={"fp_static_weap_tow"};
-      magazines[] = {"5Rnd_GAT_missiles", "5Rnd_GAT_missiles", "5Rnd_GAT_missiles"};
+      weapons[]={"fp_static_weap_metis"};
+      magazines[] = {"fp_static_mag_metis", "fp_static_mag_metis", "fp_static_mag_metis"};
       gunnerAction = "Metis_Gunner";
       gunnerOpticsModel = "\FP_Static_Weapons\metis\2Dscope_Metis";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};

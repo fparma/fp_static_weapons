@@ -3,7 +3,7 @@ class fp_static_d30_base : StaticCannon {
   cost = 10000;
   availableForSupportTypes[]={"Artillery"};
   artilleryScanner = 1;
-  displayName="2A18M (D-30A)"; //122mm howitzer 2A18 (D-30)
+  displayName="2A18M (D-30A)"; //122mm howitzer 2A18M (D-30A)
 
   model="\FP_Static_Weapons\D30\D30";
   icon= "\FP_Static_Weapons\d30\icon\icomap_d30_CA.paa";
@@ -49,8 +49,8 @@ class fp_static_d30_base : StaticCannon {
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
 
-      minElev=-9;
-      maxelev = 80;
+      minElev= -7;
+      maxelev= 80;
       minTurn=-180;
       maxTurn=180;
       class ViewOptics: ViewOptics {

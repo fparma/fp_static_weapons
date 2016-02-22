@@ -3,7 +3,7 @@ class fp_static_mag_metis : VehicleMagazine {
   author = "{{ author }}";
   displayName = "5Rnd 9M131 (Metis-M)";
   displayNameShort = "AT";
-  ammo = "fp_static_ammo_tow";
+  ammo = "fp_static_ammo_metis";
   mass = 8;
   count = 5;
   type = 0;

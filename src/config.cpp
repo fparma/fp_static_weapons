@@ -25,21 +25,21 @@
 class CfgPatches {
   class FP_Static_Weapons {
     units[] = {
-      {% if weapons.m2 %}"fp_static_m2_b","fp_static_m2_minitripod_b",{% endif %}
-      {% if weapons.dshkm %}"fp_static_dshkm_b","fp_static_dshkm_minitripod_b",{% endif %}
-      {% if weapons.kord %}"fp_static_kord_b","fp_static_kord_high_b",{% endif %}
-      {% if weapons.zu23 %}"fp_static_zu23_b",{% endif %}
-      {% if weapons.spg9 %}"fp_static_spg9_b",{% endif %}
-      {% if weapons.tow %}"fp_static_tow_b",{% endif %}
-      {% if weapons.mk19 %}"fp_static_mk19_b",{% endif %}
-      {% if weapons.ags30 %}"fp_static_ags30_b",{% endif %}
-      {% if weapons.metis %}"fp_static_metis_b",{% endif %}
-      {% if weapons.m252 %}"fp_static_m252_b",{% endif %}
-      {% if weapons.podnos %}"fp_static_podnos_b",{% endif %}
-      {% if weapons.igla %}"fp_static_igla_b",{% endif %}
-      {% if weapons.d30 %}"fp_static_d30_b",{% endif %}
-      {% if weapons.m119 %}"fp_static_m119_b",{% endif %}
-      {% if weapons.search %}"fp_static_searchlight_b"{% endif %}
+      "fp_static_m2_b","fp_static_m2_minitripod_b",
+      "fp_static_dshkm_b","fp_static_dshkm_minitripod_b",
+      "fp_static_kord_b","fp_static_kord_high_b",
+      "fp_static_zu23_b",
+      "fp_static_spg9_b",
+      "fp_static_tow_b",
+      "fp_static_mk19_b",
+      "fp_static_ags30_b",
+      "fp_static_metis_b",
+      "fp_static_m252_b",
+      "fp_static_podnos_b",
+      "fp_static_igla_b",
+      "fp_static_d30_b",
+      "fp_static_m119_b",
+      "fp_static_searchlight_b"
     };
     weapons[] = {};
     requiredVersion = 0.1;
@@ -57,21 +57,19 @@ class Mode_SemiAuto;
 class CfgMovesBasic {
   class DefaultDie;
   class ManActions {
-    {% if weapons.m2 %}M2_Gunner = "M2_Gunner";M2_Tripod_Gunner = "M2_Tripod_Gunner";{% endif %}
-    {% if weapons.dshkm %}DShKM_Gunner = "DShKM_Gunner";DShKM_Tripod_Gunner = "DShKM_Tripod_Gunner";{% endif %}
-    {% if weapons.spg9 %}SPG_Gunner = "SPG_Gunner";{% endif %}
-    {% if weapons.zu23 %}ZU23_Gunner = "ZU23_Gunner";{% endif %}
-    {% if weapons.m119 %}M119_Commander = "M119_Commander";M119_Gunner = "M119_Gunner";M119_Cargo = "M119_Cargo";{% endif %}
-    {% if weapons.tow %}TOW_Gunner = "TOW_Gunner";{% endif %}
-    {% if weapons.ags30 %}AGS_Gunner = "AGS_Gunner";{% endif %}
-    {% if weapons.kord %}LowKORD_Gunner = "LowKORD_Gunner";KORD_Gunner = "KORD_Gunner";{% endif %}
-    {% if weapons.d30 %}D30_Commander = "D30_Commander";D30_Gunner = "D30_Gunner";D30_Cargo = "D30_Cargo";{% endif %}
-    {% if weapons.metis %}Metis_Gunner = "Metis_Gunner";{% endif %}
-    {% if weapons.mk19 %}MK19_Gunner = "MK19_Gunner";{% endif %}
-    {% if weapons.m252 %}{% endif %}
-    {% if weapons.podnos %}{% endif %}
-    {% if weapons.search %}searchlight_Gunner = "searchlight_Gunner";{% endif %}
-    {% if weapons.igla %}Igla_Gunner = "Igla_Gunner";{% endif %}
+    M2_Gunner = "M2_Gunner";M2_Tripod_Gunner = "M2_Tripod_Gunner";
+    DShKM_Gunner = "DShKM_Gunner";DShKM_Tripod_Gunner = "DShKM_Tripod_Gunner";
+    SPG_Gunner = "SPG_Gunner";
+    ZU23_Gunner = "ZU23_Gunner";
+    M119_Commander = "M119_Commander";M119_Gunner = "M119_Gunner";M119_Cargo = "M119_Cargo";
+    TOW_Gunner = "TOW_Gunner";
+    AGS_Gunner = "AGS_Gunner";
+    LowKORD_Gunner = "LowKORD_Gunner";KORD_Gunner = "KORD_Gunner";
+    D30_Commander = "D30_Commander";D30_Gunner = "D30_Gunner";D30_Cargo = "D30_Cargo";
+    Metis_Gunner = "Metis_Gunner";
+    MK19_Gunner = "MK19_Gunner";
+    searchlight_Gunner = "searchlight_Gunner";
+    Igla_Gunner = "Igla_Gunner";
   };
 };
 

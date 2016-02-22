@@ -10,7 +10,6 @@ In the future, this mod may also incorporate new Static assets and assets missin
 * [Building](https://github.com/fparma/fp_static_weapons/blob/master/doc/building.md)
 * [Reporting an Issue](https://github.com/fparma/fp_static_weapons/blob/master/doc/issue-reporting.md)
 * [Project Structure Explanation](https://github.com/fparma/fp_static_weapons/blob/master/doc/project-structure.md)
-* [Templating System introduction](https://github.com/fparma/fp_static_weapons/blob/master/doc/templating_system.md)
 
 ## Licensing
 ### General / Config Files

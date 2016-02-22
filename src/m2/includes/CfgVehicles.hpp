@@ -36,6 +36,8 @@ class fp_static_m2_base : StaticMGWeapon {
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
       selectionFireAnim = "zasleh";
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
       minElev = -20;
       maxElev = 35;
       minTurn = -180;

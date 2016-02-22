@@ -45,6 +45,8 @@ class fp_static_igla_base : StaticAAWeapon {
         "4Rnd_GAA_missiles",
         "4Rnd_GAA_missiles"
       };
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
       maxelev = 120;
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";

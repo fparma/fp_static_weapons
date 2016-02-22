@@ -49,6 +49,9 @@ class fp_static_d30_base : StaticCannon {
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
 
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
+
       minElev=-9;
       maxelev = 80;
       minTurn=-180;

@@ -35,6 +35,8 @@ class fp_static_kord_base : StaticMGWeapon {
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
       selectionFireAnim = "zasleh";
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
       minElev = -20;
       maxElev = 20;
       minTurn = -180;

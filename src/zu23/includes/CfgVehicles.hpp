@@ -55,6 +55,7 @@ class fp_static_zu23_base : StaticCannon {
         "OpticsCHAbera1",
         "OpticsBlur2"
       };
+      ejectDeadGunner = 1;
       gunnerForceOptics = 0;
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";

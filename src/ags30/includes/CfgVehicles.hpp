@@ -30,6 +30,7 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
 
       gunnerOpticsModel = "\FP_Static_Weapons\ags30\optika_AGS30";
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
+      ejectDeadGunner = 1;
       gunnerForceOptics = 0;
 
       minElev=-10;maxelev = 32;

@@ -34,6 +34,8 @@ class fp_static_tow_base: StaticATWeapon {
       gunnerAction = "TOW_Gunner";
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
       class ViewGunner {
         initAngleX = 5;
         minAngleX = -30;

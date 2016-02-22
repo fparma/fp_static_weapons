@@ -29,6 +29,8 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
       gunnerLeftHandAnimName = "otochlaven";
       gunnerRightHandAnimName = "otochlaven";
       gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
       minElev = -10;
       minTurn = -90;
       maxTurn = 90;

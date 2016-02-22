@@ -24,7 +24,8 @@ class fp_static_searchlight_base: StaticSEARCHLight {
       maxTurn = 180;
       initTurn = 0;
       gunnerAction = "searchlight_Gunner";
-      ejectDeadGunner = true;
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
     };
   };
 

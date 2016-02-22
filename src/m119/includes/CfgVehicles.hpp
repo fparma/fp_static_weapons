@@ -43,6 +43,8 @@ class fp_static_m119_base : StaticMortar {
       gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2"};
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
+      ejectDeadGunner = 1;
+      gunnerForceOptics = 0;
 
       minElev = -9;
       maxelev = 80;

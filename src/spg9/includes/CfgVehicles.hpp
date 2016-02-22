@@ -30,7 +30,7 @@ class fp_static_spg9_base : StaticATWeapon {
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
       minTurn = -45; maxTurn = +45; initTurn = 0;
       minElev = -10; maxElev = +40; initElev = 0;
-      ejectDeadGunner = 0;
+      ejectDeadGunner = 1;
       gunnerForceOptics = 0;
       class ViewGunner {
         initAngleX = 5; minAngleX = -30; maxAngleX = +30;

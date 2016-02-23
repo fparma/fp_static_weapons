@@ -102,7 +102,7 @@ class fp_static_bag_tripod_m2_low : fp_static_bag_base {
   _generalMacro="RP_M2HBHigh_Ins";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="M2HB (M3";
+		displayName="M2HB (M3)";
 		assembleTo="fp_static_m2_minitripod_b";
 		base[]={"fp_static_bag_weapon_m2"};
 	};

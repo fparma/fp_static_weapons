@@ -39,6 +39,9 @@ class CfgPatches {
       "fp_static_igla_b",
       "fp_static_d30_b",
       "fp_static_m119_b",
+<<<<<<< HEAD
+      "fp_static_searchlight_b"
+=======
       "fp_static_searchlight_b",
       "fp_static_bag_weapon_m252",
       "fp_static_bag_tripod_m252",
@@ -57,6 +60,7 @@ class CfgPatches {
       "fp_static_bag_weapon_m2",
       "fp_static_bag_tripod_m2",
       "fp_static_bag_tripod_m2_low"
+>>>>>>> refs/remotes/fparma/master
     };
     weapons[] = {};
     requiredVersion = 0.1;

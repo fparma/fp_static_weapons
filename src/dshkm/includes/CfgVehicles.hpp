@@ -70,7 +70,6 @@ class fp_static_dshkm_b : fp_static_dshkm_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_dshkm, fp_static_bag_tripod_dshkm)  
 };
 class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
   scope = PUBLIC;
@@ -79,36 +78,4 @@ class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_dshkm, fp_static_bag_tripod_dshkm_low)  
 };
-
-// DSHKM Weapon Bag
-class fp_static_bag_weapon_dshkm : fp_static_bag_base {
-  displayName = "DShKM (Weapon)";
-  _generalMacro="FP_DSHKMHigh_Ins";
-};
-
-// DSHKM Tripod High
-class fp_static_bag_tripod_dshkm : fp_static_bag_base {
-  displayName = "DShKM (Tripod)";
-  _generalMacro="FP_DSHKMHigh_Ins";
-  class assembleInfo: assembleInfo {
-    primary = 1;
-		displayName="DShKM";
-		assembleTo="fp_static_dshkm_b";
-		base[]={"fp_static_bag_weapon_dshkm"};
-	};
-};
-
-// DSHKM Minitripod
-class fp_static_bag_tripod_dshkm_low : fp_static_bag_base {
-  displayName = "DShKM (Minitripod)";
-  _generalMacro="FP_DSHKMHigh_Ins";
-  class assembleInfo: assembleInfo {
-    primary = 1;
-		displayName="DShKM (Minitripod)";
-		assembleTo="fp_static_dshkm_minitripod_b";
-		base[]={"fp_static_bag_weapon_dshkm"};
-	};
-};
-

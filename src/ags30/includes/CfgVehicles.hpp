@@ -6,10 +6,11 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
   mapSize = 2.5;
   armor = 30;
   armorStructural=10;
+  class UserActions {};
 
   class Turrets: Turrets {
     class MainTurret: MainTurret {
-      
+
       gunBeg="Usti hlavne";
       gunEnd="Konec hlavne";
       gunnerLeftHandAnimName = "otochlaven";
@@ -51,7 +52,7 @@ class fp_static_ags30_b : fp_static_ags30_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_ags30, fp_static_bag_tripod_ags30)  
+  ASSEMBLE_INFO(fp_static_bag_weapon_ags30, fp_static_bag_tripod_ags30)
 };
 
 // AGS30 Weapon Bag

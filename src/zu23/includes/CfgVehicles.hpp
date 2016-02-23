@@ -14,7 +14,7 @@ class fp_static_zu23_base : StaticCannon {
   memoryPointsGetInCargoDir="pos_cargo";
   memoryPointsGetInDriver="pos_driver_dir";
   memoryPointsGetInDriverDir="pos_driver";
-
+  class UserActions {};
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       minTurn = -180;

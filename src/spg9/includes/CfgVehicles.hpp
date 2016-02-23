@@ -13,6 +13,7 @@ class fp_static_spg9_base : StaticATWeapon {
   nameSound = "cannon";
   transportSoldier = 0;
   gunnerHasFlares = true;
+  class UserActions {};
   class AnimationSources {
     class ReloadAnim{source = "reload";weapon = "fp_static_weap_spg9";};
   };

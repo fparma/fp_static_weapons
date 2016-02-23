@@ -6,7 +6,7 @@ class fp_static_tow_base: StaticATWeapon {
   picture = "\FP_Static_Weapons\tow\icon\tow_static_CA.paa";
   icon = "\FP_Static_Weapons\tow\icon\icomap_tow_static_CA.paa";
   displayname = "M41A4 TOW"; //BGM-71 TOW
-
+  class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};

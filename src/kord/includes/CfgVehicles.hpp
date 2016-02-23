@@ -1,6 +1,7 @@
 class fp_static_kord_base : StaticMGWeapon {
   armor = 30;
   armorStructural=10;
+  class UserActions {};
 
   model = "\FP_Static_Weapons\kord\kord";
   picture = "\FP_Static_Weapons\kord\icon\kord_ca.paa";

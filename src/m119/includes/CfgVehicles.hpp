@@ -3,6 +3,7 @@ class fp_static_m119_base : StaticMortar {
   cost = 10000;
   availableForSupportTypes[] = {"Artillery"};
   artilleryScanner = 1;
+  class UserActions {};
 
   transportSoldier = 2;
   gunnerHasFlares = true;

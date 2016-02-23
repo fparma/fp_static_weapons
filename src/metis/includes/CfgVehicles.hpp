@@ -5,6 +5,7 @@ class fp_static_metis_base : StaticATWeapon {
   picture="\FP_Static_Weapons\metis\icon\metis_at13_CA.paa";
   UiPicture="\FP_Static_Weapons\metis\icon\metis_at13_CA.paa";
   mapSize = 1.5;
+  class UserActions {};
 
   class Turrets: Turrets {
     class MainTurret: MainTurret {

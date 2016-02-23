@@ -1,6 +1,7 @@
 class fp_static_mk19_base: StaticGrenadeLauncher {
   armor = 30;
   armorStructural=10;
+  class UserActions {};
 
   displayName = "Mk. 19 (M3)"; //40mm MK19 (M3 Tripod)
   model = "\FP_Static_Weapons\mk19\mk19_stat";

@@ -1,6 +1,7 @@
 class fp_static_igla_base : StaticAAWeapon {
   armor = 30;
   armorStructural=10;
+  class UserActions {};
 
   gunnercansee = "2+4+8+32";
   displayName = "9K38 (Djigit)"; //9K38 (Igla)

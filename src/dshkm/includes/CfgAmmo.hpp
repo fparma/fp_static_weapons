@@ -1,13 +1,13 @@
 class fp_static_ammo_dshkm_ball : B_127x108_Ball {
   class CamShakeFire {
-    power = 30;
-    duration = 0.5;
-    frequency = 20;
-    distance = 30;
+    power = 0;
+    duration = 0;
+    frequency = 0;
+    distance = 0;
   };
   class CamShakePlayerFire {
-    power = 30;
-    duration = 0.5;
-    frequency = 20;
+    power = 0;
+    duration = 0;
+    frequency = 0;
   };
 };

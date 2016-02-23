@@ -10,6 +10,9 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
 
   class Turrets: Turrets {
     class MainTurret: MainTurret {
+      gunBeg="Usti hlavne";
+      gunEnd="Konec hlavne";
+      
       gunnerLeftHandAnimName = "otochlaven";
       gunnerRightHandAnimName = "otochlaven";
       gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";

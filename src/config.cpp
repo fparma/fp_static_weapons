@@ -166,7 +166,6 @@ class CfgVehicles {
   #include "podnos\includes\CfgVehicles.hpp"
   #include "igla\includes\CfgVehicles.hpp"
   #include "searchlight\includes\CfgVehicles.hpp"
-
 };
 
 class CfgWeapons {

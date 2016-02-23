@@ -126,6 +126,23 @@ class CfgVehicles {
   class Mortar_01_base_F : StaticMortar{};
   class B_Mortar_01_F : Mortar_01_base_F{};
 
+  // Generic Bag Configuration for Gun and Tripod Bags
+  class fp_static_bag_base: Weapon_Bag_Base {
+		author=AUTHOR;
+		mass=200;
+		model = "\A3\Weapons_F\Ammoboxes\Bags\Backpack_Small.p3d";
+		picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Small_khk.paa";
+		icon = "iconBackpack";
+		class assembleInfo {
+			primary=0;
+			base="";
+			assembleTo="";
+			dissasembleTo[]={};
+			displayName="";
+		};
+		faction=FACTION_NATO;
+	};
+
   #include "m2\includes\CfgVehicles.hpp"
   #include "dshkm\includes\CfgVehicles.hpp"
   #include "spg9\includes\CfgVehicles.hpp"

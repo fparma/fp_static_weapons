@@ -9,6 +9,9 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
 
   class Turrets: Turrets {
     class MainTurret: MainTurret {
+      
+      gunBeg="Usti hlavne";
+      gunEnd="Konec hlavne";
       gunnerLeftHandAnimName = "otochlaven";
       gunnerRightHandAnimName = "otochlaven";
 

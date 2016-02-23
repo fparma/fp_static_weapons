@@ -39,7 +39,10 @@ class CfgPatches {
       "fp_static_igla_b",
       "fp_static_d30_b",
       "fp_static_m119_b",
-      "fp_static_searchlight_b"
+      "fp_static_searchlight_b",
+
+      "fp_static_bag_weapon_m2",
+      "fp_static_bag_tripod_m2"
     };
     weapons[] = {};
     requiredVersion = 0.1;

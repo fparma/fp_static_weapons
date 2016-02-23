@@ -41,6 +41,10 @@ class CfgPatches {
       "fp_static_m119_b",
       "fp_static_searchlight_b",
 
+      "fp_static_bag_weapon_kord",
+      "fp_static_bag_tripod_kord",
+      "fp_static_bag_tripod_kord_low",
+
       "fp_static_bag_weapon_dshkm",
       "fp_static_bag_tripod_dshkm",
       "fp_static_bag_tripod_dshkm_low",

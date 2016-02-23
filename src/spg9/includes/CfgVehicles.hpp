@@ -60,13 +60,11 @@ class fp_static_spg9_b : fp_static_spg9_base {
 // SPG Weapon Bag
 class fp_static_bag_weapon_spg : fp_static_bag_base {
   displayName = "SPG-9 (Weapon)";
-  _generalMacro="FP_M2HBHigh_Ins";
 };
 
 // SPG Tripod
 class fp_static_bag_tripod_spg : fp_static_bag_base {
   displayName = "SPG-9 (Tripod)";
-  _generalMacro="RP_M2HBHigh_Ins";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="SPG-9";

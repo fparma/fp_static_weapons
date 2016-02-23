@@ -91,7 +91,7 @@ class fp_static_kord_b : fp_static_kord_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_kord, fp_static_bag_tripod_kord_low)  
+  ASSEMBLE_INFO(fp_static_bag_weapon_kord, fp_static_bag_tripod_kord_low)
 };
 class fp_static_kord_high_b : fp_static_kord_high_base {
   scope = PUBLIC;
@@ -100,19 +100,17 @@ class fp_static_kord_high_b : fp_static_kord_high_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_kord, fp_static_bag_tripod_kord)  
+  ASSEMBLE_INFO(fp_static_bag_weapon_kord, fp_static_bag_tripod_kord)
 };
 
 // Kord Weapon Bag
 class fp_static_bag_weapon_kord : fp_static_bag_base {
   displayName = "KORD (Weapon)";
-  _generalMacro="FP_KORDHigh_Ins";
 };
 
 // Kord Tripod High
 class fp_static_bag_tripod_kord : fp_static_bag_base {
   displayName = "KORD (6T7 Tripod)";
-  _generalMacro="RP_KORDHigh_Ins";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="KORD (6T7 Tripod)";
@@ -124,7 +122,6 @@ class fp_static_bag_tripod_kord : fp_static_bag_base {
 // Kord Minitripod
 class fp_static_bag_tripod_kord_low : fp_static_bag_base {
   displayName = "KORD (6U16 Minitripod)";
-  _generalMacro="RP_KORDHigh_Ins";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="KORD (6U16)";

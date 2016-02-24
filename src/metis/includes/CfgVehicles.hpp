@@ -1,5 +1,5 @@
 class fp_static_metis_base : StaticATWeapon {
-  displayname = "AT-9K115 'Metis'";
+  displayname = "9K115-2 (Metis-M)";
   model = "\FP_Static_Weapons\metis\metis.p3d";
   icon="FP_Static_Weapons\metis\icon\icomap_metis_at13_CA.paa";
   picture="\FP_Static_Weapons\metis\icon\metis_at13_CA.paa";
@@ -10,7 +10,7 @@ class fp_static_metis_base : StaticATWeapon {
   ace_cargo_size = 2;
   ace_dragging_canDrag = 1;
   ace_dragging_canCarry = 1;
-  
+
   class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
@@ -53,15 +53,15 @@ class fp_static_metis_b : fp_static_metis_base {
 
 // Metis Weapon Bag
 class fp_static_bag_weapon_metis : fp_static_bag_base {
-  displayName = "FP AT-9K115 'Metis' (Weapon)";
+  displayName = "FP 9K115-2 (Metis-M) (Weapon)";
 };
 
 // Metis Tripod
 class fp_static_bag_tripod_metis : fp_static_bag_base {
-  displayName = "FP AT-9K115 'Metis' (Tripod)";
+  displayName = "FP 9K115-2 (Metis-M) (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="AT-9K115 'Metis'";
+		displayName="9K115-2 (Metis-M)";
 		assembleTo="fp_static_metis_b";
 		base[]={"fp_static_bag_weapon_metis"};
 	};

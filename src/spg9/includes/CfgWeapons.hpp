@@ -1,6 +1,6 @@
 class fp_static_weap_spg9 : RocketPods {
   scope = 2;
-  displayName = "SPG-9";
+  displayName = "6G6 (SPG-9)";
   type = 65536;
   reloadTime = 6;
   magazineReloadTime = 10;

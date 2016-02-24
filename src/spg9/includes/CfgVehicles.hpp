@@ -2,7 +2,7 @@ class fp_static_spg9_base : StaticATWeapon {
   armor = 30;
   armorStructural=10;
 
-  displayName = "SPG-9"; //73mm SPG-9 Kopye
+  displayName = "6G6 (SPG-9)"; //73mm SPG-9 Kopye
   model = "\FP_Static_Weapons\spg9\spg9.p3d";
 
   icon = "FP_Static_Weapons\spg9\icon\icon_spg9_CA.paa";
@@ -65,15 +65,15 @@ class fp_static_spg9_b : fp_static_spg9_base {
 
 // SPG Weapon Bag
 class fp_static_bag_weapon_spg : fp_static_bag_base {
-  displayName = "FP SPG-9 (Weapon)";
+  displayName = "FP 6G6 'SPG-9' (Weapon)";
 };
 
 // SPG Tripod
 class fp_static_bag_tripod_spg : fp_static_bag_base {
-  displayName = "FP SPG-9 (Tripod)";
+  displayName = "FP 6G6 'SPG-9' (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="SPG-9";
+		displayName="6G6 (SPG-9)";
 		assembleTo="fp_static_spg9_b";
 		base[]={"fp_static_bag_weapon_spg"};
 	};

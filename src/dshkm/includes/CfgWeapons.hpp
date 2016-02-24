@@ -15,7 +15,7 @@ class fp_static_weap_dshkm : MGun {
   };
 
   scope = PUBLIC;
-  displayName = "DShKM";
+  displayName = "DShKM (Dushka)";
   magazines[] = {
     "fp_static_mag_50rnd_dshkm",
     "fp_static_mag_150rnd_dshkm"
@@ -27,7 +27,7 @@ class fp_static_weap_dshkm : MGun {
   canLock = 0;
   modes[] = {"manual","close", "short", "medium", "far"};
   class manual : MGun {
-    displayName = "DShKM";
+    displayName = "DShKM (Dushka)";
     autoFire = 1;
     sounds[] = {"StandardSound"};
     class StandardSound {

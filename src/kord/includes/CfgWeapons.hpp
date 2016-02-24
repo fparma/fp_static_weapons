@@ -14,7 +14,7 @@ class fp_static_weap_kord: MGun {
   };
 
   scope = PUBLIC;
-  displayName = "Kord Weapon";
+  displayName = "6P50-1 (KORD)";
   magazines[] = {"fp_static_mag_50rnd_kord"};
   magazineReloadTime = 6;
   aiDispersionCoefY=15; //7.0;// better that DShKM
@@ -22,7 +22,7 @@ class fp_static_weap_kord: MGun {
   canLock = 0;
   modes[] = {"manual","close","short","medium","far"};
   class manual: MGun {
-    displayName = "Kord Weapon";
+    displayName = "6P50-1 (KORD)";
     autoFire = 1;
     sounds[] = {"StandardSound"};
     class StandardSound {

@@ -6,7 +6,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\dshkm\icon\dshkm_mg_ca.paa";
   icon = "\FP_Static_Weapons\dshkm\icon\icomap_DShKM_CA.paa";
   mapSize = 3;
-  displayName = "DShKM"; //12.7mm DShKM
+  displayName = "DShKM (Dushka)"; //12.7mm DShKM
 
   ace_cargo_canLoad = 1;
   ace_cargo_size = 2;
@@ -54,7 +54,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
 };
 
 class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {
-  displayName = "DShKM (Minitripod)"; //.50Cal DShKM (SAG-30 Tripod)
+  displayName = "DShKM 'Dushka' (Minitripod)"; //.50Cal DShKM (SAG-30 Tripod)
   model = "\FP_Static_Weapons\dshkm\DShKM_mg2";
 
   class Turrets : Turrets {
@@ -90,15 +90,15 @@ class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
 
 // DSHKM Weapon Bag
 class fp_static_bag_weapon_dshkm : fp_static_bag_base {
-  displayName = "FP DShKM (Weapon)";
+  displayName = "FP DShKM 'Dushka' (Weapon)";
 };
 
 // DSHKM Tripod High
 class fp_static_bag_tripod_dshkm : fp_static_bag_base {
-  displayName = "FP DShKM (Tripod)";
+  displayName = "FP DShKM 'Dushka' (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="DShKM";
+		displayName="DShKM (Dushka)";
 		assembleTo="fp_static_dshkm_b";
 		base[]={"fp_static_bag_weapon_dshkm"};
 	};
@@ -109,7 +109,7 @@ class fp_static_bag_tripod_dshkm_low : fp_static_bag_base {
   displayName = "FP DShKM (Minitripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="DShKM (Minitripod)";
+		displayName="DShKM 'Dushka' (Minitripod)";
 		assembleTo="fp_static_dshkm_minitripod_b";
 		base[]={"fp_static_bag_weapon_dshkm"};
 	};

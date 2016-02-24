@@ -6,7 +6,7 @@ class fp_static_kord_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\kord\icon\kord_ca.paa";
   icon = "\FP_Static_Weapons\kord\icon\icomap_kord_ca.paa";
   mapSize = 3;
-  displayName = "KORD (6U16)"; //12.7mm Kord 6P50-1 (6T7 Tripod)
+  displayName = "6P50-1 (KORD)"; //12.7mm Kord 6P50-1 (6T7 Tripod)
 
   ace_cargo_canLoad = 1;
   ace_cargo_size = 2;
@@ -70,7 +70,7 @@ class fp_static_kord_base : StaticMGWeapon {
   };
 };
 class fp_static_kord_high_base : fp_static_kord_base {
-  displayName="KORD (6T7)"; //.50Cal Kord 6P50 (6U16 Mount)
+  displayName="6P50-1 (KORD)"; //.50Cal Kord 6P50 (6U16 Mount)
   model="\FP_Static_Weapons\kord\KORD_6u16sp";
   icon="FP_Static_Weapons\kord\icon\icomap_kord6u16sp_CA.paa";
   picture="\FP_Static_Weapons\kord\icon\kord6u16sp_ca.paa";
@@ -110,15 +110,15 @@ class fp_static_kord_high_b : fp_static_kord_high_base {
 
 // Kord Weapon Bag
 class fp_static_bag_weapon_kord : fp_static_bag_base {
-  displayName = "FP KORD (Weapon)";
+  displayName = "FP 6P50-1 'KORD' (Weapon)";
 };
 
 // Kord Tripod High
 class fp_static_bag_tripod_kord : fp_static_bag_base {
-  displayName = "FP KORD (6T7 Tripod)";
+  displayName = "FP 6P50-1 'KORD' (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="KORD (6T7 Tripod)";
+		displayName="6P50-1 (KORD)";
 		assembleTo="fp_static_kord_high_b";
 		base[]={"fp_static_bag_weapon_kord"};
 	};
@@ -126,10 +126,10 @@ class fp_static_bag_tripod_kord : fp_static_bag_base {
 
 // Kord Minitripod
 class fp_static_bag_tripod_kord_low : fp_static_bag_base {
-  displayName = "FP KORD (6U16 Minitripod)";
+  displayName = "FP 6P50-1 'KORD' (Minitripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="KORD (6U16)";
+		displayName="6P50-1 'KORD' (Minitripod)";
 		assembleTo="fp_static_kord_b";
 		base[]={"fp_static_bag_weapon_kord"};
 	};

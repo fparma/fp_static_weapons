@@ -18,12 +18,12 @@ class fp_static_m252_b : fp_static_m252_base {
 
 // M252 Weapon Bag
 class fp_static_bag_weapon_m252 : fp_static_bag_base {
-  displayName = "M252 (Weapon)";
+  displayName = "FP M252 (Weapon)";
 };
 
 // M252 Tripod
 class fp_static_bag_tripod_m252 : fp_static_bag_base {
-  displayName = "M252 (Tripod)";
+  displayName = "FP M252 (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="M252";

@@ -81,12 +81,12 @@ class fp_static_m2_minitripod_b : fp_static_m2_minitripod_base {
 
 // M2 Weapon Bag
 class fp_static_bag_weapon_m2 : fp_static_bag_base {
-  displayName = "M2HB (M3 AA Weapon)";
+  displayName = "FP M2HB (M3 AA Weapon)";
 };
 
 // M2 Tripod High
 class fp_static_bag_tripod_m2 : fp_static_bag_base {
-  displayName = "M2HB (M3 AA Tripod)";
+  displayName = "FP M2HB (M3 AA Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="M2HB (M3 AA)";
@@ -97,7 +97,7 @@ class fp_static_bag_tripod_m2 : fp_static_bag_base {
 
 // M2 Minitripod
 class fp_static_bag_tripod_m2_low : fp_static_bag_base {
-  displayName = "M2HB (M3 Minitripod)";
+  displayName = "FP M2HB (M3 Minitripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="M2HB (M3)";

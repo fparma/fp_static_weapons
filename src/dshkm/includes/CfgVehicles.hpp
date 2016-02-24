@@ -85,12 +85,12 @@ class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
 
 // DSHKM Weapon Bag
 class fp_static_bag_weapon_dshkm : fp_static_bag_base {
-  displayName = "DShKM (Weapon)";
+  displayName = "FP DShKM (Weapon)";
 };
 
 // DSHKM Tripod High
 class fp_static_bag_tripod_dshkm : fp_static_bag_base {
-  displayName = "DShKM (Tripod)";
+  displayName = "FP DShKM (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="DShKM";
@@ -101,7 +101,7 @@ class fp_static_bag_tripod_dshkm : fp_static_bag_base {
 
 // DSHKM Minitripod
 class fp_static_bag_tripod_dshkm_low : fp_static_bag_base {
-  displayName = "DShKM (Minitripod)";
+  displayName = "FP DShKM (Minitripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="DShKM (Minitripod)";

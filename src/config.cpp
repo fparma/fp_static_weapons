@@ -156,6 +156,7 @@ class CfgVehicles {
 		model = "\A3\Weapons_F\Ammoboxes\Bags\Backpack_Small.p3d";
 		picture = "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Small_khk.paa";
 		icon = "iconBackpack";
+    scope = PUBLIC;
 		class assembleInfo {
 			primary=0;
 			base="";

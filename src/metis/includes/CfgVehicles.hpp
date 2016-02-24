@@ -48,12 +48,12 @@ class fp_static_metis_b : fp_static_metis_base {
 
 // Metis Weapon Bag
 class fp_static_bag_weapon_metis : fp_static_bag_base {
-  displayName = "AT-9K115 'Metis' (Weapon)";
+  displayName = "FP AT-9K115 'Metis' (Weapon)";
 };
 
 // Metis Tripod
 class fp_static_bag_tripod_metis : fp_static_bag_base {
-  displayName = "AT-9K115 'Metis' (Tripod)";
+  displayName = "FP AT-9K115 'Metis' (Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="AT-9K115 'Metis'";

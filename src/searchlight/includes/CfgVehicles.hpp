@@ -106,12 +106,12 @@ class fp_static_searchlight_b: fp_static_searchlight_base {
 
 // Searchlight Weapon Bag
 class fp_static_bag_weapon_searchlight : fp_static_bag_base {
-  displayName = "Searchlight (Lamp)";
+  displayName = "FP Searchlight (Lamp)";
 };
 
 // Searchlight Tripod High
 class fp_static_bag_tripod_searchlight : fp_static_bag_base {
-  displayName = "Searchlight (Bipod)";
+  displayName = "FP Searchlight (Bipod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="Searchlight";

@@ -105,12 +105,12 @@ class fp_static_kord_high_b : fp_static_kord_high_base {
 
 // Kord Weapon Bag
 class fp_static_bag_weapon_kord : fp_static_bag_base {
-  displayName = "KORD (Weapon)";
+  displayName = "FP KORD (Weapon)";
 };
 
 // Kord Tripod High
 class fp_static_bag_tripod_kord : fp_static_bag_base {
-  displayName = "KORD (6T7 Tripod)";
+  displayName = "FP KORD (6T7 Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="KORD (6T7 Tripod)";
@@ -121,7 +121,7 @@ class fp_static_bag_tripod_kord : fp_static_bag_base {
 
 // Kord Minitripod
 class fp_static_bag_tripod_kord_low : fp_static_bag_base {
-  displayName = "KORD (6U16 Minitripod)";
+  displayName = "FP KORD (6U16 Minitripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="KORD (6U16)";

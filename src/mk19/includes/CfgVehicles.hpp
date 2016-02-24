@@ -46,12 +46,12 @@ class fp_static_mk19_b : fp_static_mk19_base {
 
 // MK19 Weapon Bag
 class fp_static_bag_weapon_mk19 : fp_static_bag_base {
-  displayName = "Mk. 19 (M3 Weapon)";
+  displayName = "FP Mk. 19 (M3 Weapon)";
 };
 
 // MK19 Tripod
 class fp_static_bag_tripod_mk19 : fp_static_bag_base {
-  displayName = "Mk. 19 (M3 Tripod)";
+  displayName = "FP Mk. 19 (M3 Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="Mk. 19 (M3)";

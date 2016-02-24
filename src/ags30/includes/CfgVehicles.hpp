@@ -57,12 +57,12 @@ class fp_static_ags30_b : fp_static_ags30_base {
 
 // AGS30 Weapon Bag
 class fp_static_bag_weapon_ags30 : fp_static_bag_base {
-  displayName = "AGS-30 (6P17 Weapon)";
+  displayName = "FP AGS-30 (6P17 Weapon)";
 };
 
 // AGS30 Tripod High
 class fp_static_bag_tripod_ags30 : fp_static_bag_base {
-  displayName = "AGS-30 (6P17 Tripod)";
+  displayName = "FP AGS-30 (6P17 Tripod)";
   class assembleInfo: assembleInfo {
     primary = 1;
 		displayName="AGS-30 (6P17)";

@@ -1,7 +1,6 @@
 class fp_static_m2_base : StaticMGWeapon {
   armor = 30;
   armorStructural=10;
-  class UserActions {};
 
   model = "\FP_Static_Weapons\m2\m2_mg";
   picture = "\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";
@@ -9,6 +8,12 @@ class fp_static_m2_base : StaticMGWeapon {
   mapSize = 3;
   displayName = "M2HB (M3 AA)"; //12.7mm Browning M2
 
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 2;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
+
+  class UserActions {};
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       optics = 1;

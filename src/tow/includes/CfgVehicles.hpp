@@ -6,6 +6,12 @@ class fp_static_tow_base: StaticATWeapon {
   picture = "\FP_Static_Weapons\tow\icon\tow_static_CA.paa";
   icon = "\FP_Static_Weapons\tow\icon\icomap_tow_static_CA.paa";
   displayname = "M41A4 TOW"; //BGM-71 TOW
+
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 4;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
+
   class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {

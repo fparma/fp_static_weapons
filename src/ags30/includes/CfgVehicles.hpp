@@ -6,8 +6,13 @@ class fp_static_ags30_base: StaticGrenadeLauncher {
   mapSize = 2.5;
   armor = 30;
   armorStructural=10;
-  class UserActions {};
 
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 2;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
+
+  class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
 

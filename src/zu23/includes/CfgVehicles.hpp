@@ -14,6 +14,12 @@ class fp_static_zu23_base : StaticCannon {
   memoryPointsGetInCargoDir="pos_cargo";
   memoryPointsGetInDriver="pos_driver_dir";
   memoryPointsGetInDriverDir="pos_driver";
+
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 4;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
+
   class UserActions {};
   class Turrets : Turrets {
     class MainTurret : MainTurret {

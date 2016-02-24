@@ -12,6 +12,12 @@ class fp_static_searchlight_base: StaticSEARCHLight {
   nameSound = "light";
   displayName = "Searchlight";
   typicalCargo[] = {};
+
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 2;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
+
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       memoryPointsGetInGunner = "pos_gunner";

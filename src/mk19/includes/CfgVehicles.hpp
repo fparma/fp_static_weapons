@@ -1,7 +1,6 @@
 class fp_static_mk19_base: StaticGrenadeLauncher {
   armor = 30;
   armorStructural=10;
-  class UserActions {};
 
   displayName = "Mk. 19 (M3)"; //40mm MK19 (M3 Tripod)
   model = "\FP_Static_Weapons\mk19\mk19_stat";
@@ -9,6 +8,12 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
   icon = "\FP_Static_Weapons\mk19\icon\icomap_mk19_stat_CA.paa";
   mapSize = 2.5;
 
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 2;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
+  
+  class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       gunBeg="Usti hlavne";

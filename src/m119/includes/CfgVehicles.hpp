@@ -3,7 +3,6 @@ class fp_static_m119_base : StaticMortar {
   cost = 10000;
   availableForSupportTypes[] = {"Artillery"};
   artilleryScanner = 1;
-  class UserActions {};
 
   transportSoldier = 2;
   gunnerHasFlares = true;
@@ -17,6 +16,12 @@ class fp_static_m119_base : StaticMortar {
   memoryPointsGetInCargo = "pos_cargo_dir";
   memoryPointsGetInCargoDir = "pos_cargo";
 
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 6;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 0;
+
+  class UserActions {};
   class Turrets : Turrets {
     class MainTurret : MainTurret {
       weapons[] = {"fp_static_weap_m119"};

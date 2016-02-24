@@ -4,7 +4,6 @@ class fp_static_d30_base : StaticCannon {
   availableForSupportTypes[]={"Artillery"};
   artilleryScanner = 1;
   displayName="2A18M (D-30A)"; //122mm howitzer 2A18M (D-30A)
-  class UserActions {};
 
   model="\FP_Static_Weapons\D30\D30";
   icon= "\FP_Static_Weapons\d30\icon\icomap_d30_CA.paa";
@@ -20,6 +19,12 @@ class fp_static_d30_base : StaticCannon {
   memoryPointsGetInCargo = "pos_cargo_dir";
   memoryPointsGetInCargoDir = "pos_cargo";
 
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 6;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 0;
+
+  class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
       gunBeg="Usti hlavne";

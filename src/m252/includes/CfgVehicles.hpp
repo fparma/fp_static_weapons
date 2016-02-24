@@ -3,6 +3,10 @@ class fp_static_m252_base : B_Mortar_01_F {
   model = "\FP_Static_Weapons\m252\81Mortar";
   picture = "\FP_Static_Weapons\m252\icon\mortar_m251_ca.paa";
   icon = "\FP_Static_Weapons\m252\icon\icomap_mortar_m251_ca.paa";
+  ace_cargo_canLoad = 1;
+  ace_cargo_size = 2;
+  ace_dragging_canDrag = 1;
+  ace_dragging_canCarry = 1;
   class UserActions {};
 };
 

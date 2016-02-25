@@ -36,7 +36,7 @@ class fp_static_weap_dshkm : MGun {
       soundBegin[] = {"begin1",1};
     };
     reloadTime = 0.1;
-    dispersion = 0.0015;
+    dispersion = 0.006;
 
     showToPlayer = true;
     burst = 1;

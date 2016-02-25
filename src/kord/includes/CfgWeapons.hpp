@@ -31,7 +31,7 @@ class fp_static_weap_kord: MGun {
       soundBegin[] = {"begin1",1};
     };
     reloadTime = 0.086;
-    dispersion=0.00085; // better that DShKM
+    dispersion=0.003; // better that DShKM
 
     showToPlayer = true;
     burst = 1;

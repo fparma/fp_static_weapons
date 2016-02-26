@@ -6,7 +6,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\dshkm\icon\dshkm_mg_ca.paa";
   icon = "\FP_Static_Weapons\dshkm\icon\icomap_DShKM_CA.paa";
   mapSize = 3;
-  displayName = "DShKM (Dushka)"; //12.7mm DShKM
+  displayName = "DShKM 'Dushka' (Raised)"; //12.7mm DShKM
 
   ace_cargo_canLoad = 1;
   ace_cargo_size = 2;
@@ -54,7 +54,7 @@ class fp_static_dshkm_base : StaticMGWeapon {
 };
 
 class fp_static_dshkm_minitripod_base: fp_static_dshkm_base {
-  displayName = "DShKM 'Dushka' (Minitripod)"; //.50Cal DShKM (SAG-30 Tripod)
+  displayName = "DShKM 'Dushka'"; //.50Cal DShKM (SAG-30 Tripod)
   model = "\FP_Static_Weapons\dshkm\DShKM_mg2";
 
   class Turrets : Turrets {

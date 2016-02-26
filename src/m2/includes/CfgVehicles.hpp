@@ -6,7 +6,7 @@ class fp_static_m2_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\m2\icon\m2_mg_CA.paa";
   icon = "\FP_Static_Weapons\m2\icon\icomap_m2_CA.paa";
   mapSize = 3;
-  displayName = "M2HB (M3 AA)"; //12.7mm Browning M2
+  displayName = "M2HB (Raised)"; //12.7mm Browning M2
 
   ace_cargo_canLoad = 1;
   ace_cargo_size = 2;
@@ -50,7 +50,7 @@ class fp_static_m2_base : StaticMGWeapon {
 };
 
 class fp_static_m2_minitripod_base : fp_static_m2_base {
-  displayName = "M2HB (M3)"; //12.7mm Browning M2 (M3 Tripod)
+  displayName = "M2HB"; //12.7mm Browning M2 (M3 Tripod)
   model = "\FP_Static_Weapons\m2\m2_mg2";
 
   class Turrets : Turrets {

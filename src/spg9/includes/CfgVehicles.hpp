@@ -2,7 +2,7 @@ class fp_static_spg9_base : StaticATWeapon {
   armor = 30;
   armorStructural=10;
 
-  displayName = "6G6 (SPG-9)"; //73mm SPG-9 Kopye
+  displayName = "6G6 'SPG-9'"; //73mm SPG-9 Kopye
   model = "\FP_Static_Weapons\spg9\spg9.p3d";
 
   icon = "FP_Static_Weapons\spg9\icon\icon_spg9_CA.paa";

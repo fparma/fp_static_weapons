@@ -6,7 +6,7 @@ class fp_static_kord_base : StaticMGWeapon {
   picture = "\FP_Static_Weapons\kord\icon\kord_ca.paa";
   icon = "\FP_Static_Weapons\kord\icon\icomap_kord_ca.paa";
   mapSize = 3;
-  displayName = "6P50-1 (KORD)"; //12.7mm Kord 6P50-1 (6T7 Tripod)
+  displayName = "6P50-1 'KORD'"; //12.7mm Kord 6P50-1 (6T7 Tripod)
 
   ace_cargo_canLoad = 1;
   ace_cargo_size = 2;
@@ -70,7 +70,7 @@ class fp_static_kord_base : StaticMGWeapon {
   };
 };
 class fp_static_kord_high_base : fp_static_kord_base {
-  displayName="6P50-1 (KORD)"; //.50Cal Kord 6P50 (6U16 Mount)
+  displayName="6P50-1 'KORD' (Raised)"; //.50Cal Kord 6P50 (6U16 Mount)
   model="\FP_Static_Weapons\kord\KORD_6u16sp";
   icon="FP_Static_Weapons\kord\icon\icomap_kord6u16sp_CA.paa";
   picture="\FP_Static_Weapons\kord\icon\kord6u16sp_ca.paa";

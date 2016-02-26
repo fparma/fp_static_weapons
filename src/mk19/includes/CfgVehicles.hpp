@@ -12,7 +12,7 @@ class fp_static_mk19_base: StaticGrenadeLauncher {
   ace_cargo_size = 2;
   ace_dragging_canDrag = 1;
   ace_dragging_canCarry = 1;
-  
+
   class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {
@@ -46,21 +46,16 @@ class fp_static_mk19_b : fp_static_mk19_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_mk19, fp_static_bag_tripod_mk19)
+  ASSEMBLE_INFO(fp_static_bag_weapon_mk19)
 };
 
 // MK19 Weapon Bag
 class fp_static_bag_weapon_mk19 : fp_static_bag_base {
-  displayName = "FP Mk. 19 (M3 Weapon)";
-};
-
-// MK19 Tripod
-class fp_static_bag_tripod_mk19 : fp_static_bag_base {
-  displayName = "FP Mk. 19 (M3 Tripod)";
+  displayName = "Mk. 19";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="Mk. 19 (M3)";
-		assembleTo="fp_static_mk19_b";
-		base[]={"fp_static_bag_weapon_mk19"};
-	};
+    displayName="Mk. 19";
+    assembleTo="fp_static_mk19_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

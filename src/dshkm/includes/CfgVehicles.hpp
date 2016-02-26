@@ -76,7 +76,7 @@ class fp_static_dshkm_b : fp_static_dshkm_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_dshkm, fp_static_bag_tripod_dshkm)
+  ASSEMBLE_INFO(fp_static_bag_weapon_dshkm_high)
 };
 class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
   scope = PUBLIC;
@@ -85,32 +85,27 @@ class fp_static_dshkm_minitripod_b : fp_static_dshkm_minitripod_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_dshkm, fp_static_bag_tripod_dshkm_low)
+  ASSEMBLE_INFO(fp_static_bag_weapon_dshkm)
+};
+
+// DSHKM Weapon Bag
+class fp_static_bag_weapon_dshkm_high : fp_static_bag_base {
+  displayName = "DShKM 'Dushka' (Raised)";
+  class assembleInfo: assembleInfo {
+    primary = 1;
+    displayName="DShKM 'Dushka' (Raised)";
+    assembleTo="fp_static_dshkm_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };
 
 // DSHKM Weapon Bag
 class fp_static_bag_weapon_dshkm : fp_static_bag_base {
-  displayName = "FP DShKM 'Dushka' (Weapon)";
-};
-
-// DSHKM Tripod High
-class fp_static_bag_tripod_dshkm : fp_static_bag_base {
-  displayName = "FP DShKM 'Dushka' (Tripod)";
+  displayName = "FP DShKM 'Dushka'";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="DShKM (Dushka)";
-		assembleTo="fp_static_dshkm_b";
-		base[]={"fp_static_bag_weapon_dshkm"};
-	};
-};
-
-// DSHKM Minitripod
-class fp_static_bag_tripod_dshkm_low : fp_static_bag_base {
-  displayName = "FP DShKM (Minitripod)";
-  class assembleInfo: assembleInfo {
-    primary = 1;
-		displayName="DShKM 'Dushka' (Minitripod)";
-		assembleTo="fp_static_dshkm_minitripod_b";
-		base[]={"fp_static_bag_weapon_dshkm"};
-	};
+    displayName="DShKM 'Dushka'";
+    assembleTo="fp_static_dshkm_minitripod_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

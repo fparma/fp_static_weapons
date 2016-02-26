@@ -48,21 +48,16 @@ class fp_static_metis_b : fp_static_metis_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_metis, fp_static_bag_tripod_metis)
+  ASSEMBLE_INFO(fp_static_bag_weapon_metis)
 };
 
 // Metis Weapon Bag
 class fp_static_bag_weapon_metis : fp_static_bag_base {
-  displayName = "FP 9K115-2 (Metis-M) (Weapon)";
-};
-
-// Metis Tripod
-class fp_static_bag_tripod_metis : fp_static_bag_base {
-  displayName = "FP 9K115-2 (Metis-M) (Tripod)";
+  displayName = "9K115-2 'Metis-M'";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="9K115-2 (Metis-M)";
-		assembleTo="fp_static_metis_b";
-		base[]={"fp_static_bag_weapon_metis"};
-	};
+    displayName="9K115-2 'Metis-M'";
+    assembleTo="fp_static_metis_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

@@ -57,21 +57,16 @@ class fp_static_ags30_b : fp_static_ags30_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_ags30, fp_static_bag_tripod_ags30)
+  ASSEMBLE_INFO(fp_static_bag_weapon_ags30)
 };
 
 // AGS30 Weapon Bag
 class fp_static_bag_weapon_ags30 : fp_static_bag_base {
-  displayName = "FP AGS-30 (6P17 Weapon)";
-};
-
-// AGS30 Tripod High
-class fp_static_bag_tripod_ags30 : fp_static_bag_base {
-  displayName = "FP AGS-30 (6P17 Tripod)";
+  displayName = "6P17 'AGS-30'";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="AGS-30 (6P17)";
+		displayName="6P17 'AGS-30'";
 		assembleTo="fp_static_ags30_b";
-		base[]={"fp_static_bag_weapon_ags30"};
+		base[] = {BAG_COMPATIBLE_ARRAY};
 	};
 };

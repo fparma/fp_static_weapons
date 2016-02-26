@@ -13,14 +13,16 @@
 
 #define AUTHOR "FP Mod Team"
 
-#define ASSEMBLE_INFO(bagName, tripodName) \
+#define ASSEMBLE_INFO(bagName) \
   class assembleInfo { \
     primary = 0; \
     base = ""; \
     assembleTo = ""; \
-    dissasembleTo[] = {bagName, tripodName}; \
+    dissasembleTo[] = {bagName, "B_HMG_01_support_F"}; \
     displayName = ""; \
   };
+
+#define BAG_COMPATIBLE_ARRAY "B_HMG_01_support_F","O_HMG_01_support_F","I_HMG_01_support_F", "B_HMG_01_support_high_F","O_HMG_01_support_high_F","I_HMG_01_support_high_F"
 
 class CfgPatches {
   class FP_Static_Weapons {
@@ -41,28 +43,18 @@ class CfgPatches {
       "fp_static_m119_b",
       "fp_static_searchlight_b",
       "fp_static_bag_weapon_m252",
-      "fp_static_bag_tripod_m252",
       "fp_static_bag_weapon_podnos",
-      "fp_static_bag_tripod_podnos",
       "fp_static_bag_weapon_ags30",
-      "fp_static_bag_tripod_ags30",
       "fp_static_bag_weapon_mk19",
-      "fp_static_bag_tripod_mk19",
       "fp_static_bag_weapon_searchlight",
-      "fp_static_bag_tripod_searchlight",
       "fp_static_bag_weapon_metis",
-      "fp_static_bag_tripod_metis",
       "fp_static_bag_weapon_spg",
-      "fp_static_bag_tripod_spg",
       "fp_static_bag_weapon_kord",
-      "fp_static_bag_tripod_kord",
-      "fp_static_bag_tripod_kord_low",
+      "fp_static_bag_weapon_kord_high",
       "fp_static_bag_weapon_dshkm",
-      "fp_static_bag_tripod_dshkm",
-      "fp_static_bag_tripod_dshkm_low",
+      "fp_static_bag_weapon_dshkm_high",
       "fp_static_bag_weapon_m2",
-      "fp_static_bag_tripod_m2",
-      "fp_static_bag_tripod_m2_low"
+      "fp_static_bag_weapon_m2_high"
     };
     weapons[] = {};
     requiredVersion = 0.1;

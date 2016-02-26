@@ -17,21 +17,16 @@ class fp_static_podnos_b : fp_static_podnos_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_podnos, fp_static_bag_tripod_podnos)
+  ASSEMBLE_INFO(fp_static_bag_weapon_podnos)
 };
 
 // Podnos Weapon Bag
 class fp_static_bag_weapon_podnos : fp_static_bag_base {
-  displayName = "FP 2B14-1 'Podnos' (Weapon)";
-};
-
-// Podnos Tripod
-class fp_static_bag_tripod_podnos : fp_static_bag_base {
-  displayName = "FP 2B14-1 'Podnos' (Tripod)";
+  displayName = "FP 2B14-1 'Podnos'";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="2B14-1 (Podnos)";
-		assembleTo="fp_static_podnos_b";
-		base[]={"fp_static_bag_weapon_podnos"};
-	};
+    displayName="2B14-1 'Podnos'";
+    assembleTo="fp_static_podnos_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

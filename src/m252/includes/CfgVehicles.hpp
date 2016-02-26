@@ -17,21 +17,16 @@ class fp_static_m252_b : fp_static_m252_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_m252, fp_static_bag_tripod_m252)
+  ASSEMBLE_INFO(fp_static_bag_weapon_m252)
 };
 
 // M252 Weapon Bag
 class fp_static_bag_weapon_m252 : fp_static_bag_base {
-  displayName = "FP M252 (Weapon)";
-};
-
-// M252 Tripod
-class fp_static_bag_tripod_m252 : fp_static_bag_base {
-  displayName = "FP M252 (Tripod)";
+  displayName = "M252";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="M252";
-		assembleTo="fp_static_m252_b";
-		base[]={"fp_static_bag_weapon_m252"};
-	};
+    displayName="M252";
+    assembleTo="fp_static_m252_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

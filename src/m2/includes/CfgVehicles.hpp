@@ -72,7 +72,7 @@ class fp_static_m2_b : fp_static_m2_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_m2, fp_static_bag_tripod_m2)
+  ASSEMBLE_INFO(fp_static_bag_weapon_m2_high)
 };
 class fp_static_m2_minitripod_b : fp_static_m2_minitripod_base {
   scope = PUBLIC;
@@ -81,32 +81,26 @@ class fp_static_m2_minitripod_b : fp_static_m2_minitripod_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_m2, fp_static_bag_tripod_m2_low)
+  ASSEMBLE_INFO(fp_static_bag_weapon_m2)
 };
 
 // M2 Weapon Bag
+class fp_static_bag_weapon_m2_high : fp_static_bag_base {
+  displayName = "M2HB (Raised)";
+  class assembleInfo: assembleInfo {
+    primary = 1;
+    displayName="M2HB (Raised)";
+    assembleTo="fp_static_m2_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
+};
+
 class fp_static_bag_weapon_m2 : fp_static_bag_base {
-  displayName = "FP M2HB (M3 AA Weapon)";
-};
-
-// M2 Tripod High
-class fp_static_bag_tripod_m2 : fp_static_bag_base {
-  displayName = "FP M2HB (M3 AA Tripod)";
+  displayName = "M2HB";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="M2HB (M3 AA)";
-		assembleTo="fp_static_m2_b";
-		base[]={"fp_static_bag_weapon_m2"};
-	};
-};
-
-// M2 Minitripod
-class fp_static_bag_tripod_m2_low : fp_static_bag_base {
-  displayName = "FP M2HB (M3 Minitripod)";
-  class assembleInfo: assembleInfo {
-    primary = 1;
-		displayName="M2HB (M3)";
-		assembleTo="fp_static_m2_minitripod_b";
-		base[]={"fp_static_bag_weapon_m2"};
-	};
+    displayName="M2HB";
+    assembleTo="fp_static_m2_minitripod_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

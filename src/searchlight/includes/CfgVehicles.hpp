@@ -107,21 +107,16 @@ class fp_static_searchlight_b: fp_static_searchlight_base {
   side = 1;
   faction = FACTION_NATO;
   crew = UNIT_NATO;
-  ASSEMBLE_INFO(fp_static_bag_weapon_searchlight, fp_static_bag_tripod_searchlight)
+  ASSEMBLE_INFO(fp_static_bag_weapon_searchlight)
 };
 
 // Searchlight Weapon Bag
 class fp_static_bag_weapon_searchlight : fp_static_bag_base {
-  displayName = "FP Searchlight (Lamp)";
-};
-
-// Searchlight Tripod High
-class fp_static_bag_tripod_searchlight : fp_static_bag_base {
-  displayName = "FP Searchlight (Bipod)";
+  displayName = "Searchlight";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="Searchlight";
-		assembleTo="fp_static_searchlight_b";
-		base[]={"fp_static_bag_weapon_searchlight"};
-	};
+    displayName="Searchlight";
+    assembleTo="fp_static_searchlight_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

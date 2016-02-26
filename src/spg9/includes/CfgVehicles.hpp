@@ -60,21 +60,16 @@ class fp_static_spg9_b : fp_static_spg9_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
-  ASSEMBLE_INFO(fp_static_bag_weapon_spg, fp_static_bag_tripod_spg)
+  ASSEMBLE_INFO(fp_static_bag_weapon_spg)
 };
 
 // SPG Weapon Bag
 class fp_static_bag_weapon_spg : fp_static_bag_base {
-  displayName = "FP 6G6 'SPG-9' (Weapon)";
-};
-
-// SPG Tripod
-class fp_static_bag_tripod_spg : fp_static_bag_base {
-  displayName = "FP 6G6 'SPG-9' (Tripod)";
+  displayName = "6G6 'SPG-9'";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="6G6 (SPG-9)";
-		assembleTo="fp_static_spg9_b";
-		base[]={"fp_static_bag_weapon_spg"};
-	};
+    displayName="6G6 'SPG-9'";
+    assembleTo="fp_static_spg9_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

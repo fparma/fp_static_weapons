@@ -35,7 +35,7 @@ class fp_static_weap_zu23: CannonCore {
       soundBegin[] = {"begin1",1};
     };
     reloadTime = 0.06;
-    dispersion = 0.0005;
+    dispersion = 0.008;
     multiplier = 2;
     soundContinuous = 0;
     showToPlayer = 1;

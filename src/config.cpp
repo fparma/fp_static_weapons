@@ -42,6 +42,7 @@ class CfgPatches {
       "fp_static_d30_b",
       "fp_static_m119_b",
       "fp_static_searchlight_b",
+      "fp_static_bag_weapon_tow",
       "fp_static_bag_weapon_m252",
       "fp_static_bag_weapon_podnos",
       "fp_static_bag_weapon_ags30",

@@ -63,4 +63,15 @@ class fp_static_tow_b : fp_static_tow_base {
   faction = FACTION_NATO;
   crew = UNIT_NATO;
   typicalCargo[] = {UNIT_NATO};
+  ASSEMBLE_INFO(fp_static_bag_weapon_tow)
+};
+
+class fp_static_bag_weapon_tow : fp_static_bag_base {
+  displayName = "M41A4 TOW";
+  class assembleInfo: assembleInfo {
+    primary = 1;
+    displayName="M41A4 TOW";
+    assembleTo="fp_static_tow_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

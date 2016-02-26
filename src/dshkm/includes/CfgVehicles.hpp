@@ -101,7 +101,7 @@ class fp_static_bag_weapon_dshkm_high : fp_static_bag_base {
 
 // DSHKM Weapon Bag
 class fp_static_bag_weapon_dshkm : fp_static_bag_base {
-  displayName = "FP DShKM 'Dushka'";
+  displayName = "DShKM 'Dushka'";
   class assembleInfo: assembleInfo {
     primary = 1;
     displayName="DShKM 'Dushka'";

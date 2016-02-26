@@ -22,7 +22,7 @@ class fp_static_podnos_b : fp_static_podnos_base {
 
 // Podnos Weapon Bag
 class fp_static_bag_weapon_podnos : fp_static_bag_base {
-  displayName = "FP 2B14-1 'Podnos'";
+  displayName = "2B14-1 'Podnos'";
   class assembleInfo: assembleInfo {
     primary = 1;
     displayName="2B14-1 'Podnos'";

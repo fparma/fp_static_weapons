@@ -23,4 +23,5 @@ class fp_static_weap_spg9 : RocketPods {
   midRange = 450;
   maxRange = 800;
   cursor = "EmptyCursor";
+  dispersion=0.003;
 };

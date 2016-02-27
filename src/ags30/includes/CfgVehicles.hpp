@@ -65,8 +65,8 @@ class fp_static_bag_weapon_ags30 : fp_static_bag_base {
   displayName = "6P17 'AGS-30'";
   class assembleInfo: assembleInfo {
     primary = 1;
-		displayName="6P17 'AGS-30'";
-		assembleTo="fp_static_ags30_b";
-		base[] = {BAG_COMPATIBLE_ARRAY};
-	};
+    displayName="6P17 'AGS-30'";
+    assembleTo="fp_static_ags30_b";
+    base[] = {BAG_COMPATIBLE_ARRAY};
+  };
 };

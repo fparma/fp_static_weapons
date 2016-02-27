@@ -22,8 +22,8 @@ class fp_static_weap_dshkm : MGun {
   };
 
   magazineReloadTime = 6;
-  aiDispersionCoefY = 21;
-  aiDispersionCoefX = 21;
+  aiDispersionCoefX = 20;
+  aiDispersionCoefY = 15;
   canLock = 0;
   modes[] = {"manual","close", "short", "medium", "far"};
   class manual : MGun {

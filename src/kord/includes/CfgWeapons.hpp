@@ -17,8 +17,8 @@ class fp_static_weap_kord: MGun {
   displayName = "6P50-1 'KORD'";
   magazines[] = {"fp_static_mag_50rnd_kord"};
   magazineReloadTime = 6;
-  aiDispersionCoefY=15; //7.0;// better that DShKM
-  aiDispersionCoefX=15; // better that DShKM
+  aiDispersionCoefY=13; //7.0;// better that DShKM
+  aiDispersionCoefX=13; // better that DShKM
   canLock = 0;
   modes[] = {"manual","close","short","medium","far"};
   class manual: MGun {

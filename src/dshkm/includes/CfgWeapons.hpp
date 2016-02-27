@@ -15,7 +15,7 @@ class fp_static_weap_dshkm : MGun {
   };
 
   scope = PUBLIC;
-  displayName = "DShKM (Dushka)";
+  displayName = "DShKM 'Dushka'";
   magazines[] = {
     "fp_static_mag_50rnd_dshkm",
     "fp_static_mag_150rnd_dshkm"

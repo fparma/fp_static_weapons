@@ -24,16 +24,12 @@ class fp_static_igla_base : StaticAAWeapon {
       gunneropticseffect[] = {"OpticsCHAbera1", "OpticsBlur2"};
       gunneropticsmodel = "\A3\weapons_f\reticle\optics_empty";
       magazines[] = {
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles",
-        "4Rnd_GAA_missiles"
+        "fp_static_mag_igla",
+        "fp_static_mag_igla",
+        "fp_static_mag_igla",
+        "fp_static_mag_igla",
+        "fp_static_mag_igla",
+        "fp_static_mag_igla"
       };
       ejectDeadGunner = 1;
       gunnerForceOptics = 0;
@@ -41,7 +37,7 @@ class fp_static_igla_base : StaticAAWeapon {
       memoryPointsGetInGunner = "pos_gunner";
       memoryPointsGetInGunnerDir = "pos_gunner_dir";
       minelev = -10;
-      weapons[] = {"missiles_titan"};
+      weapons[] = {"fp_static_weap_igla"};
       class ViewOptics {
         initanglex = 0;
         initangley = 0;

@@ -1,7 +1,7 @@
 class fp_static_mag_50rnd_dshkm : VehicleMagazine {
   scope = PUBLIC;
   displayName = "50Rnd DshKM Mag";
-  ammo = "fp_static_ammo_dshkm_ball";
+  ammo = "B_127x108_Ball";
   count = 50;
   initSpeed = 850;
   maxLeadSpeed = 200;

@@ -92,7 +92,7 @@ class CfgMovesBasic {
 class CfgMovesMaleSdr : CfgMovesBasic {
   class States {
     class Crew;
-    class MG_Gunner_Base : Crew {
+    class FP_MG_Gunner_Base : Crew {
       connectTo[] = {"Static_Dead", 1};
       leftHandIKBeg = true;
       leftHandIKCurve[] = {1};

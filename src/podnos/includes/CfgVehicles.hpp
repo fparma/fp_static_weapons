@@ -7,6 +7,7 @@ class fp_static_podnos_base : B_Mortar_01_F {
   ace_cargo_size = 2;
   ace_dragging_canDrag = 1;
   ace_dragging_canCarry = 1;
+  scope = PRIVATE;
   class UserActions {};
 };
 

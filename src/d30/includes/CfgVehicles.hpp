@@ -24,6 +24,21 @@ class fp_static_d30_base : StaticCannon {
   ace_dragging_canDrag = 1;
   ace_dragging_canCarry = 0;
 
+  class ACE_Actions {
+    class ACE_MainActions {
+      selection = "";
+      distance = 3;
+      condition = "true";
+      class FPST_PackD30 {
+        displayName = "Pack D-30A";
+        condition = "true";
+        statement = "[_target] call FPST_fnc_d30pack;";
+        showDisabled = 0;
+        priority = 10;
+      };
+    };
+  };
+
   class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {

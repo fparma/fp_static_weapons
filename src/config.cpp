@@ -68,6 +68,17 @@ class CfgPatches {
   };
 };
 
+class CfgFunctions {
+  createShortcuts = 1;
+  class FP_CUSTOM {
+    tag="FPST";
+    class functions {
+      file = "\FP_Static_Weapons\functions";
+      class d30pack;
+    };
+  };
+};
+
 class Mode_SemiAuto;
 
 class CfgMovesBasic {

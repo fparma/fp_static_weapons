@@ -39,6 +39,11 @@ class fp_static_d30_base : StaticCannon {
     };
   };
 
+  //Lesh's Towing mod
+  LESH_canBeTowed = 1;
+  LESH_towFromFront = 1;
+  LESH_AxisOffsetTarget[] = {0,3.0,0};
+
   class UserActions {};
   class Turrets: Turrets {
     class MainTurret: MainTurret {

@@ -91,8 +91,8 @@ class fp_static_searchlight_base: StaticSEARCHLight {
     class lightOff {
       displayName = "Lights Off";
       shortcut = "Headlights";
-      condition = "player in this && {(this getVariable ['a2LightOn', false])}";
-      statement = "player action ['lightOff', this]; this setVariable ['a2LightOn', false]";
+      condition = "ACE_player in this && {(this getVariable ['a2LightOn', false])}";
+      statement = "ACE_player action ['lightOff', this]; this setVariable ['a2LightOn', false]";
       position = "pos_gunner";
       radius = 2;
       onlyforplayer = 1;

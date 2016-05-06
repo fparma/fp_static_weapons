@@ -9,6 +9,22 @@ class fp_static_m252_base : B_Mortar_01_F {
   ace_dragging_canCarry = 1;
   scope = PRIVATE;
   class UserActions {};
+  class Turrets : Turrets {
+    class MainTurret : MainTurret {
+      cameraDir = "usti hlavne";
+      memoryPointGunnerOptics = "gunnerview";
+      elevationMode = 1;
+      initCamElev = 0;
+      minCamElev = -15;
+      maxCamElev = 35;
+      initElev=0;
+      initTurn=0;
+      minElev=-15;
+      maxElev=35;
+      minTurn=-180;
+      maxTurn=180;
+    };
+  };
 };
 
 class fp_static_m252_b : fp_static_m252_base {
